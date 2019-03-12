@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="style.css" ?>
 <!DOCTYPE note SYSTEM "definition.dtd">
+
 <movies>
 	<movie>
 		<title>Kapitan Marvel</title>
-		<director>Anna Boden</director>
+		<director>
+			<firstname>Anna</firstname>
+			<lastname>Boden</lastname>
+			<birth_date>01-01-1980</birth_date>
+			<birth_city>New York</birth_city>
+		</director>
 		<genre>Action, Sci-Fi</genre>
 		<release_date>06-03-2019</release_date>
 		<duration>124</duration>
