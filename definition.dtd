@@ -1,18 +1,7 @@
-<!ELEMENT moviesCollection (movies, directors)>
-
-<!ELEMENT movies (movie*)>
-<!ELEMENT movie (title,director+,genre+,release_date,duration,production)>
-<!ATTLIST movie MovieID ID #REQUIRED 
-				DirectorID IDREF #REQUIRED>
+<!ELEMENT movie (title,director,genre,release_date,duration,production)>
 <!ELEMENT title (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
 <!ELEMENT genre (#PCDATA)>
 <!ELEMENT release_date (#PCDATA)>
 <!ELEMENT duration (#PCDATA)>
 <!ELEMENT production (#PCDATA)>
-
-<!ELEMENT directors (person*)>
-<!ELEMENT director (firstname, lastname, birth_date, birth_city)>
-<!ELEMENT firstname (#PCDATA)>
-<!ELEMENT lastname (#PCDATA)>
-<!ELEMENT birth_date (#PCDATA)>
-<!ELEMENT birth_city (#PCDATA)>
