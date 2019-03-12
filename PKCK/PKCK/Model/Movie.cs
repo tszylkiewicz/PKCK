@@ -18,6 +18,6 @@ namespace PKCK.Model
         [DataMember]
         public DateTime ReleaseDate { get; set; }
         [DataMember]
-        public List<String> ProductionPlaces { get; set; }
+        public String ProductionPlace { get; set; }
     }
 }

@@ -27,15 +27,23 @@ namespace Tests
             };
 
             // Create Movies
+            List<Genre> genre1 = new List<Genre>();
+            genre1.Add(Genre.Action);
+            genre1.Add(Genre.SciFi);
+
+
             Movie KapitanMarvel = new Movie()
             {
                 Title = "Kapitan Marvel",
                 Director = AnnaBoden,
-                Genre = { Genre.Action, Genre.SciFi },
+                Genre = genre1,
                 ReleaseDate = new DateTime(2019, 3, 6),
                 Duration = 124,
-                ProductionPlaces = {"USA"}
+                ProductionPlace = "USA"
             };
+
+            directors.Add(AnnaBoden);
+            movies.Add(KapitanMarvel);
 
             // Serialize
             collection.Directors = directors;
