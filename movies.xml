@@ -1,45 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="style.css" ?>
 <!DOCTYPE note SYSTEM "definition.dtd">
-<movies>
-	<movie>
-		<title>Kapitan Marvel</title>
-		<director>Anna Boden</director>
-		<genre>Action, Sci-Fi</genre>
-		<release_date>06-03-2019</release_date>
-		<duration>124</duration>
-		<production>USA</production>
-	</movie>
-	<movie>
-		<title>Iron Man</title>
-		<director>Jon Favreau</director>
-		<genre>Action, Sci-Fi</genre>
-		<release_date>14-04-2008</release_date>
-		<duration>126</duration>
-		<production>USA</production>
-	</movie>
-	<movie>
-		<title>Alien Coventant</title>
-		<director>Ridley Scott</director>
-		<genre>Horror, Sci-Fi</genre>
-		<release_date>04-05-2017</release_date>
-		<duration>122</duration>
-		<production>USA, United Kingdom</production>
-	</movie>
-	<movie>
-		<title>Deadpool</title>
-		<director>Jon Favreau</director>
-		<genre>Action, Comedy, Sci-Fi</genre>
-		<release_date>21-01-2016</release_date>
-		<duration>108</duration>
-		<production>USA</production>
-	</movie>
-	<movie>
-		<title>Suicide Squad</title>
-		<director>David Ayer</director>
-		<genre>Action, Sci-Fi</genre>
-		<release_date>05-06-2016</release_date>
-		<duration>123</duration>
-		<production>USA, Canada</production>
-	</movie>
-</movies>
+<moviesCollection>
+	<movies>
+		<movie MovieID = "M1" DirectorID = "D1">
+			<title>Kapitan Marvel</title>
+			<director>
+				<firstname>Anna</firstname>
+				<lastname>Boden</lastname>
+				<birth_date>01-01-1980</birth_date>
+				<birth_city>New York</birth_city>
+			</director>
+			<genre>Action, Sci-Fi</genre>
+			<release_date>06-03-2019</release_date>
+			<duration>124</duration>
+			<production>USA</production>
+		</movie>
+		<movie MovieID = "M2" DirectorID = "D1">
+			<title>Iron Man</title>
+			<genre>Action, Sci-Fi</genre>
+			<release_date>14-04-2008</release_date>
+			<duration>126</duration>
+			<production>USA</production>
+		</movie>
+		<movie MovieID = "M3" DirectorID = "D1">
+			<title>Alien Coventant</title>
+			<genre>Horror, Sci-Fi</genre>
+			<release_date>04-05-2017</release_date>
+			<duration>122</duration>
+			<production>USA, United Kingdom</production>
+		</movie>
+		<movie MovieID = "M4" DirectorID = "D1">
+			<title>Deadpool</title>
+			<genre>Action, Comedy, Sci-Fi</genre>
+			<release_date>21-01-2016</release_date>
+			<duration>108</duration>
+			<production>USA</production>
+		</movie>
+		<movie MovieID = "M5" DirectorID = "D1">
+			<title>Suicide Squad</title>
+			<genre>Action, Sci-Fi</genre>
+			<release_date>05-06-2016</release_date>
+			<duration>123</duration>
+			<production>USA, Canada</production>
+		</movie>
+	</movies>
+	<directors>
+		<person DirectorID = "D1">
+			<firstname>Anna</firstname>
+			<lastname>Boden</lastname>
+			<age>35</age>
+		</person>
+	<directors>	
+</moviesCollection>
