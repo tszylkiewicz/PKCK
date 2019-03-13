@@ -1,41 +1,112 @@
-Movie {
-	text-align: center;
-	width: 25%;
-	display: inline-block;
-	font-family: Verdana, Arial;
-	font-size: 15px;
-	margin-top: 50px;
-	padding: 25px;
-	border: 1px solid #000;
+* {
+	margin: 0;
+	padding: 0;
 }
 
+Collection {
+	width: 100vw;
+	min-height: 100vh;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+	overflow-x: hidden;
+}
+
+
+
+Movies, Directors {
+	width: 90vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+Movies::before, Directors::before {
+	content: "FILMY";
+	font-size: 2rem;
+	text-align: center;
+	width: 100%;
+	background: #aaa;
+	margin: 4rem 0 0 0;
+	padding: 0.2rem 0;
+}
+
+Directors::before {
+	content: "REŻYSEROWIE";
+	margin: 0;
+}
+
+Movie, Directors Director {	
+	width: 15rem;
+	height: 15rem;
+
+	margin: 0.5rem;
+	padding: 1rem;
+	border: 0.2rem solid #000;
+	
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	
+	text-align: center;
+}
+
+Directors Director {
+	height: 7rem;
+}
+
+
+/* Directors */
+Directors Firstname, Directors Lastname {	
+	width: 100%;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+Directors BirthDate {
+	width: 100%;
+}
+
+Movies BirthDate {
+	display: none;
+}
+
+
+/* Movies */
 Title {
-	display: block;	
-	font-size: 20px;
-	font-weight: bold; 
-	margin-bottom: 10px;
+	width: 100%;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 Director {
-		display: block;
-	}
+	width: 100%;
+}
 
 ReleaseDate {
+	width: 100%;
 	display: block;	
 }
 
 Duration {
+	width: 100%;
 	display: block;	
 }
 
 ProductionPlaces {
+	width: 100%;
 	display: block;	
 }
 
 Genres {
+	width: 100%;
 	display: block;	
 }
 
 Movies {
-	text-align: center;
 }

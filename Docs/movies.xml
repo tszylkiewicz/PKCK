@@ -3,72 +3,72 @@
 <!DOCTYPE Collection SYSTEM "definition.dtd">
 <Collection xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
   <Directors>
-    <Director z:Id="i2">
+    <Director>
       <Firstname>Anna</Firstname>
       <Lastname>Boden</Lastname>
       <BirthDate>20-09-1976</BirthDate>
     </Director>
-    <Director z:Id="i3">
+    <Director>
       <Firstname>Jon</Firstname>
       <Lastname>Favreau</Lastname>
       <BirthDate>19-10-1966</BirthDate>
     </Director>
-    <Director z:Id="i4">
+    <Director>
       <Firstname>Ridley</Firstname>
       <Lastname>Scott</Lastname>
       <BirthDate>30-11-1937</BirthDate>
     </Director>
-    <Director z:Id="i5">
+    <Director>
       <Firstname>David</Firstname>
       <Lastname>Ayer</Lastname>
       <BirthDate>18-01-1968</BirthDate>
     </Director>
-    <Director z:Id="i6">
+    <Director>
       <Firstname>Alex</Firstname>
       <Lastname>Garland</Lastname>
       <BirthDate>26-05-1970</BirthDate>
     </Director>
-    <Director z:Id="i7">
+    <Director>
       <Firstname>Wojciech</Firstname>
       <Lastname>Smarzowski</Lastname>
       <BirthDate>18-01-1963</BirthDate>
     </Director>
-    <Director z:Id="i8">
+    <Director>
       <Firstname>George</Firstname>
       <Lastname>Miller</Lastname>
       <BirthDate>03-03-1945</BirthDate>
     </Director>
-    <Director z:Id="i9">
+    <Director>
       <Firstname>Denis</Firstname>
       <Lastname>Villeneuve</Lastname>
       <BirthDate>03-10-1967</BirthDate>
     </Director>
-    <Director z:Id="i10">
+    <Director>
       <Firstname>Joss</Firstname>
       <Lastname>Whedon</Lastname>
       <BirthDate>23-06-1964</BirthDate>
     </Director>
-    <Director z:Id="i11">
+    <Director>
       <Firstname>Scott</Firstname>
       <Lastname>Derrickson</Lastname>
       <BirthDate>16-07-1966</BirthDate>
     </Director>
-    <Director z:Id="i12">
+    <Director>
       <Firstname>James</Firstname>
       <Lastname>Mangold</Lastname>
       <BirthDate>16-12-1963</BirthDate>
     </Director>
-    <Director z:Id="i13">
+    <Director>
       <Firstname>Guillermo</Firstname>
       <Lastname>del Torro</Lastname>
       <BirthDate>09-10-1964</BirthDate>
     </Director>
-    <Director z:Id="i14">
+    <Director>
       <Firstname>Steven</Firstname>
       <Lastname>Spielberg</Lastname>
       <BirthDate>18-12-1946</BirthDate>
     </Director>
-    <Director z:Id="i15">
+    <Director>
       <Firstname>Morten</Firstname>
       <Lastname>Tyldum</Lastname>
       <BirthDate>19-05-1967</BirthDate>
@@ -77,7 +77,11 @@
   <Movies>
     <Movie>
       <Title>Kapitan Marvel</Title>
-      <Director z:Ref="i2" />
+      <Director>
+        <Firstname>Anna</Firstname>
+        <Lastname>Boden</Lastname>
+        <BirthDate>20-09-1976</BirthDate>
+      </Director>
       <Genres>
         <Genre>Action</Genre>
         <Genre>SciFi</Genre>
@@ -90,7 +94,11 @@
     </Movie>
     <Movie>
       <Title>Iron Man</Title>
-      <Director z:Ref="i3" />
+      <Director>
+        <Firstname>Jon</Firstname>
+        <Lastname>Favreau</Lastname>
+        <BirthDate>19-10-1966</BirthDate>
+      </Director>
       <Genres>
         <Genre>Action</Genre>
         <Genre>SciFi</Genre>
@@ -103,7 +111,11 @@
     </Movie>
     <Movie>
       <Title>Alien Coventant</Title>
-      <Director z:Ref="i4" />
+      <Director>
+        <Firstname>Ridley</Firstname>
+        <Lastname>Scott</Lastname>
+        <BirthDate>30-11-1937</BirthDate>
+      </Director>
       <Genres>
         <Genre>SciFi</Genre>
         <Genre>Horror</Genre>
@@ -117,7 +129,11 @@
     </Movie>
     <Movie>
       <Title>Deadpool</Title>
-      <Director z:Ref="i3" />
+      <Director>
+        <Firstname>Jon</Firstname>
+        <Lastname>Favreau</Lastname>
+        <BirthDate>19-10-1966</BirthDate>
+      </Director>
       <Genres>
         <Genre>Action</Genre>
         <Genre>Comedy</Genre>
@@ -131,7 +147,11 @@
     </Movie>
     <Movie>
       <Title>Suicide Squad</Title>
-      <Director z:Ref="i5" />
+      <Director>
+        <Firstname>David</Firstname>
+        <Lastname>Ayer</Lastname>
+        <BirthDate>18-01-1968</BirthDate>
+      </Director>
       <Genres>
         <Genre>Action</Genre>
         <Genre>SciFi</Genre>
@@ -145,7 +165,11 @@
     </Movie>
     <Movie>
       <Title>Ex Machina</Title>
-      <Director z:Ref="i6" />
+      <Director>
+        <Firstname>Alex</Firstname>
+        <Lastname>Garland</Lastname>
+        <BirthDate>26-05-1970</BirthDate>
+      </Director>
       <Genres>
         <Genre>Thriller</Genre>
         <Genre>SciFi</Genre>
@@ -158,7 +182,11 @@
     </Movie>
     <Movie>
       <Title>Wołyń</Title>
-      <Director z:Ref="i7" />
+      <Director>
+        <Firstname>Wojciech</Firstname>
+        <Lastname>Smarzowski</Lastname>
+        <BirthDate>18-01-1963</BirthDate>
+      </Director>
       <Genres>
         <Genre>War</Genre>
         <Genre>Drama</Genre>
@@ -171,7 +199,11 @@
     </Movie>
     <Movie>
       <Title>Mad Max: Fury Road</Title>
-      <Director z:Ref="i8" />
+      <Director>
+        <Firstname>George</Firstname>
+        <Lastname>Miller</Lastname>
+        <BirthDate>03-03-1945</BirthDate>
+      </Director>
       <Genres>
         <Genre>Action</Genre>
         <Genre>SciFi</Genre>
@@ -185,7 +217,11 @@
     </Movie>
     <Movie>
       <Title>Blade Runner 2049</Title>
-      <Director z:Ref="i9" />
+      <Director>
+        <Firstname>Denis</Firstname>
+        <Lastname>Villeneuve</Lastname>
+        <BirthDate>03-10-1967</BirthDate>
+      </Director>
       <Genres>
         <Genre>Thriller</Genre>
         <Genre>SciFi</Genre>
@@ -201,7 +237,11 @@
     </Movie>
     <Movie>
       <Title>Avengers: Age of Ultron</Title>
-      <Director z:Ref="i10" />
+      <Director>
+        <Firstname>Joss</Firstname>
+        <Lastname>Whedon</Lastname>
+        <BirthDate>23-06-1964</BirthDate>
+      </Director>
       <Genres>
         <Genre>Action</Genre>
         <Genre>SciFi</Genre>
@@ -214,7 +254,11 @@
     </Movie>
     <Movie>
       <Title>Doctor Strange</Title>
-      <Director z:Ref="i11" />
+      <Director>
+        <Firstname>Scott</Firstname>
+        <Lastname>Derrickson</Lastname>
+        <BirthDate>16-07-1966</BirthDate>
+      </Director>
       <Genres>
         <Genre>Fantasy</Genre>
         <Genre>Adventure</Genre>
@@ -227,7 +271,11 @@
     </Movie>
     <Movie>
       <Title>Logan</Title>
-      <Director z:Ref="i12" />
+      <Director>
+        <Firstname>James</Firstname>
+        <Lastname>Mangold</Lastname>
+        <BirthDate>16-12-1963</BirthDate>
+      </Director>
       <Genres>
         <Genre>Action</Genre>
         <Genre>SciFi</Genre>
@@ -243,7 +291,11 @@
     </Movie>
     <Movie>
       <Title>The Shape of Water</Title>
-      <Director z:Ref="i13" />
+      <Director>
+        <Firstname>Guillermo</Firstname>
+        <Lastname>del Torro</Lastname>
+        <BirthDate>09-10-1964</BirthDate>
+      </Director>
       <Genres>
         <Genre>Fantasy</Genre>
       </Genres>
@@ -255,7 +307,11 @@
     </Movie>
     <Movie>
       <Title>Brigde of Spies</Title>
-      <Director z:Ref="i14" />
+      <Director>
+        <Firstname>Steven</Firstname>
+        <Lastname>Spielberg</Lastname>
+        <BirthDate>18-12-1946</BirthDate>
+      </Director>
       <Genres>
         <Genre>Drama</Genre>
         <Genre>Thriller</Genre>
@@ -270,7 +326,11 @@
     </Movie>
     <Movie>
       <Title>Passengers</Title>
-      <Director z:Ref="i15" />
+      <Director>
+        <Firstname>Morten</Firstname>
+        <Lastname>Tyldum</Lastname>
+        <BirthDate>19-05-1967</BirthDate>
+      </Director>
       <Genres>
         <Genre>Adventure</Genre>
         <Genre>SciFi</Genre>

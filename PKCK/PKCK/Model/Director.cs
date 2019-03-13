@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 
 namespace PKCK.Model
 {
-    [DataContract(IsReference = true, Namespace = "")]
+    [DataContract(Namespace = "")]
     public class Director
     {
         [DataMember(Order = 0)]
