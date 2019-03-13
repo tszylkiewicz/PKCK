@@ -12,6 +12,14 @@ namespace PKCK.Model
         [EnumMember]
         UK,
         [EnumMember]
+        Australia,
+        [EnumMember]
+        Hungary,
+        [EnumMember]
+        Germany,
+        [EnumMember]
+        India,
+        [EnumMember]
         Canada
     }
 }

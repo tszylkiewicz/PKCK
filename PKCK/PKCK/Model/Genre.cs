@@ -12,6 +12,16 @@ namespace PKCK.Model
         [EnumMember]
         Horror,
         [EnumMember]
-        Comedy
+        Comedy,
+        [EnumMember]
+        Drama,
+        [EnumMember]
+        War,
+        [EnumMember]
+        Fantasy,
+        [EnumMember]
+        Adventure,
+        [EnumMember]
+        Thriller
     }
 }

@@ -16,7 +16,7 @@ namespace PKCK.Model
         [DataMember(Order = 3)]
         public int Duration { get; set; }
         [DataMember(Order = 4)]
-        public DateTime ReleaseDate { get; set; }
+        public string ReleaseDate { get; set; }
         [DataMember(Order = 5)]
         public List<Place> ProductionPlaces { get; set; }
 
@@ -32,7 +32,7 @@ namespace PKCK.Model
             }
 
             Duration = duration;
-            ReleaseDate = releaseDate;
+            ReleaseDate = releaseDate.ToString("dd-MM-yyyy");
             ProductionPlaces = new List<Place>();
             foreach(Place p in productionPlaces)
             {

@@ -8,7 +8,7 @@
 <!ELEMENT BirthDate (#PCDATA)>
 
 <!ELEMENT Movies (Movie*)>
-<!ELEMENT Movie (Title,Director,Genres,Duration,ReleaseDate,ProductionPlaces)>
+<!ELEMENT Movie (Title, Director, Genres, Duration, ReleaseDate, ProductionPlaces)>
 <!ELEMENT Title (#PCDATA)>
 <!ELEMENT Genres (#PCDATA)>
 <!ELEMENT Duration (#PCDATA)>

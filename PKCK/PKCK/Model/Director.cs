@@ -11,13 +11,13 @@ namespace PKCK.Model
         [DataMember(Order = 1)]
         public string Lastname { get; set; }
         [DataMember(Order = 2)]
-        public DateTime BirthDate { get; set; }
+        public string BirthDate { get; set; }
 
         public Director(string firstname, string lastname, DateTime birthDate)
         {
             Firstname = firstname;
             Lastname = lastname;
-            BirthDate = birthDate;
+            BirthDate = birthDate.ToString("dd-MM-yyyy");
         }
     }
 }
