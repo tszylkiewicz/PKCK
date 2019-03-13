@@ -7,10 +7,6 @@ Movie {
 	margin-top: 50px;
 	padding: 25px;
 	border: 1px solid #000;
-	
-	Director {
-		display: block;
-	}
 }
 
 Title {
@@ -19,6 +15,10 @@ Title {
 	font-weight: bold; 
 	margin-bottom: 10px;
 }
+
+Director {
+		display: block;
+	}
 
 ReleaseDate {
 	display: block;	
