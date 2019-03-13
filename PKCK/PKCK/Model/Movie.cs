@@ -4,20 +4,46 @@ using System.Runtime.Serialization;
 
 namespace PKCK.Model
 {
-    [DataContract]
+    [DataContract(Namespace = "")]
     public class Movie
     {
-        [DataMember]
-        public String Title { get; set; }
-        [DataMember]
+        [DataMember(Order = 0)]
+        public string Title { get; set; }
+        [DataMember(Order = 1)]
         public Director Director { get; set; }
-        [DataMember]
-        public List<Genre> Genre { get; set; }
-        [DataMember]
+        [DataMember(Order = 2)]
+        public List<Genre> Genres { get; set; }
+        [DataMember(Order = 3)]
         public int Duration { get; set; }
-        [DataMember]
+        [DataMember(Order = 4)]
         public DateTime ReleaseDate { get; set; }
-        [DataMember]
-        public String ProductionPlace { get; set; }
+        [DataMember(Order = 5)]
+        public List<Place> ProductionPlaces { get; set; }
+
+        public Movie(string title, Director director, Genre[] genres, int duration, DateTime releaseDate, Place[] productionPlaces)
+        {
+            Title = title;
+            Director = director;
+
+            Genres = new List<Genre>();
+            foreach(Genre g in genres)
+            {
+                Genres.Add(g);
+            }
+
+            Duration = duration;
+            ReleaseDate = releaseDate;
+            ProductionPlaces = new List<Place>();
+            foreach(Place p in productionPlaces)
+            {
+                ProductionPlaces.Add(p);
+            }
+        }
+
+
+        public Movie()
+        {
+
+        }
     }
 }

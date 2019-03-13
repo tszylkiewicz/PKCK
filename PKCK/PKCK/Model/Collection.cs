@@ -4,8 +4,8 @@ using PKCK.Model;
 
 namespace PKCK
 {
-    [DataContract(IsReference = true)]
-    public class ModelCollection
+    [DataContract(IsReference = true, Namespace = "")]
+    public class Collection
     {
         [DataMember]
         public List<Movie> Movies { get; set; }

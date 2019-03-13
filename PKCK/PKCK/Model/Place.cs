@@ -3,15 +3,15 @@
 namespace PKCK.Model
 {
     [DataContract(Namespace = "")]
-    public enum Genre
+    public enum Place
     {
         [EnumMember]
-        Action,
+        USA,
         [EnumMember]
-        SciFi,
+        Poland,
         [EnumMember]
-        Horror,
+        UK,
         [EnumMember]
-        Comedy
+        Canada
     }
 }

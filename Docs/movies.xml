@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="style.css" type="text/css"?>
+<!DOCTYPE Collection SYSTEM "definition.dtd">
+<Collection xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+  <Directors>
+    <Director z:Id="i2">
+      <Firstname>Anna</Firstname>
+      <Lastname>Boden</Lastname>
+      <BirthDate>1976-09-20T00:00:00</BirthDate>
+    </Director>
+    <Director z:Id="i3">
+      <Firstname>Jon</Firstname>
+      <Lastname>Favreau</Lastname>
+      <BirthDate>1966-10-19T00:00:00</BirthDate>
+    </Director>
+    <Director z:Id="i4">
+      <Firstname>Ridley </Firstname>
+      <Lastname>Scott</Lastname>
+      <BirthDate>1937-11-30T00:00:00</BirthDate>
+    </Director>
+    <Director z:Id="i5">
+      <Firstname>David </Firstname>
+      <Lastname>Ayer</Lastname>
+      <BirthDate>1968-01-18T00:00:00</BirthDate>
+    </Director>
+  </Directors>
+  <Movies>
+    <Movie>
+      <Title>Kapitan Marvel</Title>
+      <Director z:Ref="i2" />
+      <Genres>
+        <Genre>Action</Genre>
+        <Genre>SciFi</Genre>
+      </Genres>
+      <Duration>124</Duration>
+      <ReleaseDate>2019-03-06T00:00:00</ReleaseDate>
+      <ProductionPlaces>
+        <Place>USA</Place>
+      </ProductionPlaces>
+    </Movie>
+    <Movie>
+      <Title>Iron Man</Title>
+      <Director z:Ref="i3" />
+      <Genres>
+        <Genre>Action</Genre>
+        <Genre>SciFi</Genre>
+      </Genres>
+      <Duration>126</Duration>
+      <ReleaseDate>2008-04-14T00:00:00</ReleaseDate>
+      <ProductionPlaces>
+        <Place>USA</Place>
+      </ProductionPlaces>
+    </Movie>
+    <Movie>
+      <Title>Alien Coventant</Title>
+      <Director z:Ref="i4" />
+      <Genres>
+        <Genre>SciFi</Genre>
+        <Genre>Horror</Genre>
+      </Genres>
+      <Duration>122</Duration>
+      <ReleaseDate>2017-05-04T00:00:00</ReleaseDate>
+      <ProductionPlaces>
+        <Place>USA</Place>
+        <Place>UK</Place>
+      </ProductionPlaces>
+    </Movie>
+    <Movie>
+      <Title>Deadpool</Title>
+      <Director z:Ref="i3" />
+      <Genres>
+        <Genre>Action</Genre>
+        <Genre>Comedy</Genre>
+        <Genre>SciFi</Genre>
+      </Genres>
+      <Duration>108</Duration>
+      <ReleaseDate>2016-01-21T00:00:00</ReleaseDate>
+      <ProductionPlaces>
+        <Place>USA</Place>
+      </ProductionPlaces>
+    </Movie>
+    <Movie>
+      <Title>Suicide Squad</Title>
+      <Director z:Ref="i5" />
+      <Genres>
+        <Genre>Action</Genre>
+        <Genre>SciFi</Genre>
+      </Genres>
+      <Duration>123</Duration>
+      <ReleaseDate>2016-06-05T00:00:00</ReleaseDate>
+      <ProductionPlaces>
+        <Place>USA</Place>
+        <Place>Canada</Place>
+      </ProductionPlaces>
+    </Movie>
+  </Movies>
+</Collection>

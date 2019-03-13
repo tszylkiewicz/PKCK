@@ -1,0 +1,18 @@
+<!DOCTYPE Collection [
+<!ELEMENT Collection (Directors, Movies)>
+
+<!ELEMENT Directors (Director*)>
+<!ELEMENT Director (Firstname, Lastname, BirthDate)>
+<!ELEMENT Firstname (#PCDATA)>
+<!ELEMENT Lastname (#PCDATA)>
+<!ELEMENT BirthDate (#PCDATA)>
+
+<!ELEMENT Movies (Movie*)>
+<!ELEMENT Movie (Title,Director,Genres,Duration,ReleaseDate,ProductionPlaces)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Genres (#PCDATA)>
+<!ELEMENT Duration (#PCDATA)>
+<!ELEMENT ReleaseDate (#PCDATA)>
+<!ELEMENT ProductionPlaces (#PCDATA)>
+
+]>
