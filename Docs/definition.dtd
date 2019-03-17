@@ -1,22 +1,27 @@
-<!DOCTYPE Collection [
-<!ELEMENT Collection (Directors, Movies)>
+<!ELEMENT Collection (DocumentData, Directors, Movies)>
+<!ELEMENT DocumentData (DocumentDescribe, Authors, CreateData)>
+<!ELEMENT DocumentDescribe (#PCDATA)>
+<!ELEMENT Authors (Author+)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT CreateData (#PCDATA)>
 
 <!ELEMENT Directors (Director+)>
 <!ELEMENT Director (Firstname, Lastname, BirthDate)>
-<!ATTLIST Director z ID #REQIRED>
-<!ELEMENT Firstname (#PCDATA) #REQIRED>
-<!ELEMENT Lastname (#PCDATA) #REQIRED>
-<!ELEMENT BirthDate (#PCDATA) #IMPLIED>
+<!ATTLIST Director directorID ID #IMPLIED>
+<!ELEMENT Firstname (#PCDATA)>
+<!ELEMENT Lastname (#PCDATA)>
+<!ELEMENT BirthDate (#PCDATA)>
 
 <!ELEMENT Movies (Movie*)>
-<!ELEMENT Movie (Title, Director, Genres, Duration, ReleaseDate, ProductionPlaces)>
-<!ELEMENT Title (#PCDATA) #REQIRED>
-<!ELEMENT Director EMPTY>
-<!ATTLIST Director z IDREF #REQIRED>
-<!ELEMENT Genres (Genre+) #REQIRED>
+<!ELEMENT Movie (Title, Directorr, Genres, Duration, ReleaseDate, ProductionPlaces)>
+<!ATTLIST Movie picture CDATA #IMPLIED>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Directorr EMPTY>
+<!ATTLIST Directorr directorID IDREFS #IMPLIED>
+<!ELEMENT Genres (Genre+)>
 <!ELEMENT Genre (#PCDATA)>
-<!ELEMENT Duration (#PCDATA) #REQIRED>
-<!ELEMENT ReleaseDate (#PCDATA) #IMPLIED>
-<!ELEMENT ProductionPlaces (Place*) #IMPLIED>
+<!ELEMENT Duration (#PCDATA)>
+<!ATTLIST Duration timeUnit (min | h) "min" >
+<!ELEMENT ReleaseDate (#PCDATA)>
+<!ELEMENT ProductionPlaces (Place*)>
 <!ELEMENT Place (#PCDATA)>
-]>

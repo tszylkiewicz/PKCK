@@ -16,16 +16,14 @@ Collection {
 	overflow-x: hidden;
 }
 
-
-
-Movies, Directors {
+Movies, Directors, DocumentData {
 	width: 90vw;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-Movies::before, Directors::before {
+Movies::before, Directors::before, DocumentData::before {
 	content: "FILMY";
 	font-size: 2rem;
 	text-align: center;
@@ -35,12 +33,17 @@ Movies::before, Directors::before {
 	padding: 0.2rem 0;
 }
 
+DocumentData::before {
+	content: "INFORMACJE O DOKUMENCIE";
+	margin: 0;
+}
+
 Directors::before {
 	content: "REŻYSEROWIE";
 	margin: 0;
 }
 
-Movie, Directors Director {	
+Movie, Directors Director, DocumentDescribe, Authors, CreateData {	
 	width: 15rem;
 	height: 15rem;
 
@@ -54,6 +57,36 @@ Movie, Directors Director {
 	flex-wrap: wrap;
 	
 	text-align: center;
+}
+
+DocumentDescribe, Authors, CreateData {
+	display: block;
+	height: 10rem;
+}
+
+DocumentDescribe::before, Authors::before, CreateData::before {
+	display: block;
+	content: "Opis dokumentu ";
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+Authors::before {
+	content: "Autorzy ";
+}
+
+CreateData::before {
+	content: "Data utworzenia ";
+}
+
+Author {
+	counter-increment: section;
+	content: counter(section) ": ";
+	display: block;
+	text-align: center;
+	margin-top: 5px;
+	
 }
 
 Directors Director {
@@ -72,16 +105,55 @@ Directors BirthDate {
 	width: 100%;
 }
 
+Directors BirthDate::before {
+	content: "data urodzenia: ";
+	font-weight: bold;
+}
+
 Movies BirthDate {
 	display: none;
 }
 
+Movie {
+	background-position: center;
+	background-size: cover;
+}
+
+Movie[picture]:hover {	
+	background-color: #fff;
+	background-position: center;
+	background-size: cover;
+	z-index: 5;
+	font-size: 0;
+}
+
+Movie[picture]:hover Title{
+	font-size: 0;
+}
+
+Movie:nth-child(1):hover {
+	background: url('marvel.jpg');
+}
+
+Movie:nth-child(2):hover {
+	background: url('ironman.jpg');
+}
+
+Movie:nth-child(3):hover {
+	background: url('alien.jpg');
+}
+
+Movie:nth-child(4):hover {
+	background: url('deadpool.jpg');
+}
 
 /* Movies */
 Title {
 	width: 100%;
 	font-size: 1.5rem;
 	font-weight: bold;
+	position: relative;
+	background-color: #5cc77c;
 }
 
 Director {
@@ -93,9 +165,27 @@ ReleaseDate {
 	display: block;	
 }
 
+ReleaseDate::before {
+	content: "Premiera światowa: ";
+	font-weight: bold;
+}
+
 Duration {
 	width: 100%;
 	display: block;	
+}
+
+Duration::before {
+	content: "Czas trwania: ";
+	font-weight: bold;
+}
+
+Duration[timeUnit="min"]::after {
+	content: " min";
+}
+
+Duration[timeUnit="h"]::after {
+	content: " h";
 }
 
 ProductionPlaces {
@@ -103,10 +193,17 @@ ProductionPlaces {
 	display: block;	
 }
 
+ProductionPlaces::before {
+	content: "Produkcja: ";
+	font-weight: bold;
+}
+
 Genres {
 	width: 100%;
 	display: block;	
 }
 
-Movies {
+Genres::before {
+	content: "Gatunek: ";
+	font-weight: bold;
 }
