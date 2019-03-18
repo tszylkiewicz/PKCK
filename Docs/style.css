@@ -16,194 +16,152 @@ Collection {
 	overflow-x: hidden;
 }
 
-Movies, Directors, DocumentData {
+DocumentData {
 	width: 90vw;
+}
+
+Movies, Directors {
+	width: 70vw;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-Movies::before, Directors::before, DocumentData::before {
+Movies::before, Directors::before {
 	content: "FILMY";
 	font-size: 2rem;
 	text-align: center;
 	width: 100%;
-	background: #aaa;
-	margin: 4rem 0 0 0;
+	background: #bbb;
+	margin: 4rem 0 0.2rem 0;
 	padding: 0.2rem 0;
 }
 
-DocumentData::before {
-	content: "INFORMACJE O DOKUMENCIE";
-	margin: 0;
-}
-
 Directors::before {
-	content: "REŻYSEROWIE";
-	margin: 0;
+	content: "REŻYSERZY";
 }
 
-Movie, Directors Director, DocumentDescribe, Authors, CreateData {	
-	width: 15rem;
-	height: 15rem;
-
-	margin: 0.5rem;
-	padding: 1rem;
-	border: 0.2rem solid #000;
-	
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	
-	text-align: center;
-}
-
-DocumentDescribe, Authors, CreateData {
-	display: block;
-	height: 10rem;
-}
-
-DocumentDescribe::before, Authors::before, CreateData::before {
-	display: block;
-	content: "Opis dokumentu ";
-	font-weight: bold;
-	font-size: 1.5rem;
-	margin-bottom: 2rem;
-}
-
-Authors::before {
-	content: "Autorzy ";
-}
-
-CreateData::before {
-	content: "Data utworzenia ";
-}
-
-Author {
-	counter-increment: section;
-	content: counter(section) ": ";
-	display: block;
-	text-align: center;
-	margin-top: 5px;
-	
-}
-
+/* DIRECTORS */
 Directors Director {
-	height: 7rem;
+	width: 15rem;
+	height: 8rem;
+
+	position: relative;
+	margin: 0.2rem;
+	padding: 0 0 0 7rem;
 }
 
-
-/* Directors */
-Directors Firstname, Directors Lastname {	
-	width: 100%;
-	font-size: 1.5rem;
-	font-weight: bold;
-}
-
-Directors BirthDate {
-	width: 100%;
-}
-
-Directors BirthDate::before {
-	content: "data urodzenia: ";
-	font-weight: bold;
-}
-
-Movies BirthDate {
-	display: none;
-}
-
-Movie {
-	background-position: center;
+Directors Director::before {
+	content: "";
+	width: 7rem;
+	height: 100%;
+	background: url('./Desert.jpg');
 	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
-Movie[picture]:hover {	
-	background-color: #fff;
-	background-position: center;
-	background-size: cover;
-	z-index: 5;
-	font-size: 0;
+Directors Director:nth-child(even) {
+	background: #eee;
 }
 
-Movie[picture]:hover Title{
-	font-size: 0;
+Directors Director:nth-child(odd) {
+	background: #ddd;
 }
 
-Movie:nth-child(1):hover {
-	background: url('marvel.jpg');
-}
-
-Movie:nth-child(2):hover {
-	background: url('ironman.jpg');
-}
-
-Movie:nth-child(3):hover {
-	background: url('alien.jpg');
-}
-
-Movie:nth-child(4):hover {
-	background: url('deadpool.jpg');
-}
-
-/* Movies */
-Title {
-	width: 100%;
-	font-size: 1.5rem;
+Directors Director Firstname,  Directors Director Lastname, Directors Director BirthDate {
+	display: block;
 	font-weight: bold;
 	position: relative;
-	background-color: #5cc77c;
+	width: 90%;	
+	margin: 0 0 0 10%;
 }
 
-Director {
+Directors Director BirthDate, Directors Director Firstname {
+	margin: 0.5rem 0 0 10%;
+}
+
+Directors Director Firstname::before, Directors Director BirthDate::before {
+	content: "Imię i nazwisko";
+	font-weight: 400;
+	font-size: 0.7rem;
+	display: block;
 	width: 100%;
 }
 
-ReleaseDate {
-	width: 100%;
-	display: block;	
+Directors Director BirthDate::before {
+	content: "Data urodzenia";
 }
 
-ReleaseDate::before {
-	content: "Premiera światowa: ";
+
+
+/* MOVIES */
+Movies Movie {
+	width: 20rem;
+	height: 15rem;
+
+	position: relative;
+	margin: 0.2rem;
+	padding: 0 0 0 12rem;
+}
+
+Movies Movie::before {
+	content: "";
+	width: 12rem;
+	height: 100%;
+	background: url('./Desert.jpg');
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+Movies Movie:nth-child(even) {
+	background: #eee;
+}
+
+Movies Movie:nth-child(odd) {
+	background: #ddd;
+}
+
+
+Movie Title, Movie Genres, Movie Duration, Movie ReleaseDate, Movie ProductionPlaces {
+	display: block;
 	font-weight: bold;
+	position: relative;
+	width: 90%;	
+	margin: 0.5rem 0 0 10%;
 }
 
-Duration {
+Movie Title::before, Movie Genres::before, Movie Duration::before, Movie ReleaseDate::before, Movie ProductionPlaces::before {
+	content: "Tytuł";
+	font-weight: 400;
+	font-size: 0.7rem;
+	display: block;
 	width: 100%;
-	display: block;	
 }
 
-Duration::before {
-	content: "Czas trwania: ";
-	font-weight: bold;
+Movie Genres::before {
+	content: "Kategoria";
 }
 
-Duration[timeUnit="min"]::after {
+Movie Duration::before {
+	content: "Czas trwania";
+}
+
+Movie Duration[timeUnit="min"]::after {
 	content: " min";
 }
 
-Duration[timeUnit="h"]::after {
+Movie Duration[timeUnit="h"]::after {
 	content: " h";
 }
 
-ProductionPlaces {
-	width: 100%;
-	display: block;	
+Movie ReleaseDate::before {
+	content: "Data premiery";
 }
 
-ProductionPlaces::before {
-	content: "Produkcja: ";
-	font-weight: bold;
-}
-
-Genres {
-	width: 100%;
-	display: block;	
-}
-
-Genres::before {
-	content: "Gatunek: ";
-	font-weight: bold;
+Movie ProductionPlaces::before {
+	content: "Miejsca produkcji";
 }
