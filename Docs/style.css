@@ -18,6 +18,13 @@ Collection {
 
 DocumentData {
 	width: 90vw;
+	text-align: center;
+	font-size: 0.7rem;
+}
+
+DocumentDescribe, Author, CreateData {
+	display: block;
+	width: 100%;
 }
 
 Movies, Directors {
@@ -49,26 +56,26 @@ Directors Director {
 	position: relative;
 	margin: 0.2rem;
 	padding: 0 0 0 7rem;
+	
+	background: #ddd;
+	transition-duration: 0.3s;
 }
 
 Directors Director::before {
 	content: "";
 	width: 7rem;
 	height: 100%;
-	background: url('./Desert.jpg');
 	background-size: cover;
 	position: absolute;
 	left: 0;
 	top: 0;
 }
 
-Directors Director:nth-child(even) {
-	background: #eee;
+Directors Director:hover {
+	background: #999;
+	color: #fff;
 }
 
-Directors Director:nth-child(odd) {
-	background: #ddd;
-}
 
 Directors Director Firstname,  Directors Director Lastname, Directors Director BirthDate {
 	display: block;
@@ -94,6 +101,76 @@ Directors Director BirthDate::before {
 	content: "Data urodzenia";
 }
 
+Directors Director:nth-child(1)::before {	
+	background: url('./Directors/1.jpg');
+	background-size: cover;
+}
+
+Directors Director:nth-child(2)::before {	
+	background: url('./Directors/2.jpeg');
+	background-size: cover;
+}
+
+Directors Director:nth-child(3)::before {	
+	background: url('./Directors/3.jpg');
+	background-size: cover;
+}
+
+Directors Director:nth-child(4)::before {	
+	background: url('./Directors/4.jpg');
+	background-size: cover;
+}
+
+Directors Director:nth-child(5)::before {	
+	background: url('./Directors/5.jpg');
+	background-size: cover;
+}
+
+Directors Director:nth-child(6)::before {	
+	background: url('./Directors/6.jpg');
+	background-size: cover;
+}
+
+Directors Director:nth-child(7)::before {	
+	background: url('./Directors/7.jpg');
+	background-size: cover;
+}
+
+Directors Director:nth-child(8)::before {	
+	background: url('./Directors/8.jpg');
+	background-size: cover;
+}
+
+Directors Director:nth-child(9)::before {	
+	background: url('./Directors/9.jpg');
+	background-size: cover;
+}
+
+Directors Director:nth-child(10)::before {	
+	background: url('./Directors/10.jpg');
+	background-size: cover;
+}
+
+Directors Director:nth-child(11)::before {	
+	background: url('./Directors/11.jpg');
+	background-size: cover;
+}
+
+Directors Director:nth-child(12)::before {	
+	background: url('./Directors/12.jpg');
+	background-size: cover;
+}
+
+Directors Director:nth-child(13)::before {	
+	background: url('./Directors/13.jpg');
+	background-size: cover;
+}
+
+Directors Director:nth-child(14)::before {	
+	background: url('./Directors/14.jpg');
+	background-size: cover;
+}
+
 
 
 /* MOVIES */
@@ -104,27 +181,25 @@ Movies Movie {
 	position: relative;
 	margin: 0.2rem;
 	padding: 0 0 0 12rem;
+	
+	background: #ddd;
+	transition-duration: 0.3s;
 }
 
 Movies Movie::before {
 	content: "";
 	width: 12rem;
 	height: 100%;
-	background: url('./Desert.jpg');
-	background-size: cover;
+	background-size: contain;
 	position: absolute;
 	left: 0;
 	top: 0;
 }
 
-Movies Movie:nth-child(even) {
-	background: #eee;
+Movies Movie:hover {
+	background: #999;
+	color: #fff;
 }
-
-Movies Movie:nth-child(odd) {
-	background: #ddd;
-}
-
 
 Movie Title, Movie Genres, Movie Duration, Movie ReleaseDate, Movie ProductionPlaces {
 	display: block;
@@ -164,4 +239,79 @@ Movie ReleaseDate::before {
 
 Movie ProductionPlaces::before {
 	content: "Miejsca produkcji";
+}
+
+Movies Movie:nth-child(1)::before {	
+	background: url('./Movies/marvel.jpg');
+	background-size: cover;
+}
+
+Movies Movie:nth-child(2)::before {	
+	background: url('./Movies/ironman.jpg');
+	background-size: cover;
+}
+
+Movies Movie:nth-child(3)::before {	
+	background: url('./Movies/alien.jpg');
+	background-size: cover;
+}
+
+Movies Movie:nth-child(4)::before {	
+	background: url('./Movies/deadpool.jpg');
+	background-size: cover;
+}
+
+Movies Movie:nth-child(5)::before {	
+	background: url('./Movies/suicidesquad.jpg');
+	background-size: cover;
+}
+
+Movies Movie:nth-child(6)::before {	
+	background: url('./Movies/exmachina.jpg');
+	background-size: cover;
+}
+
+Movies Movie:nth-child(7)::before {	
+	background: url('./Movies/wolyn.jpg');
+	background-size: cover;
+}
+
+Movies Movie:nth-child(8)::before {	
+	background: url('./Movies/madmax.jpg');
+	background-size: cover;
+}
+
+Movies Movie:nth-child(9)::before {	
+	background: url('./Movies/blade.jpg');
+	background-size: cover;
+}
+
+Movies Movie:nth-child(10)::before {	
+	background: url('./Movies/avengers.jpg');
+	background-size: cover;
+}
+
+Movies Movie:nth-child(11)::before {	
+	background: url('./Movies/doctorstrange.jpg');
+	background-size: cover;
+}
+
+Movies Movie:nth-child(12)::before {	
+	background: url('./Movies/logan.jpg');
+	background-size: cover;
+}
+
+Movies Movie:nth-child(13)::before {	
+	background: url('./Movies/shape.jpg');
+	background-size: cover;
+}
+
+Movies Movie:nth-child(14)::before {	
+	background: url('./Movies/bridge.jpg');
+	background-size: cover;
+}
+
+Movies Movie:nth-child(15)::before {	
+	background: url('./Movies/passengers.jpg');
+	background-size: cover;
 }
