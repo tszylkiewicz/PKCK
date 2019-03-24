@@ -7,7 +7,7 @@
 
 <!ELEMENT Directors (Director+)>
 <!ELEMENT Director (Firstname, Lastname, BirthDate)>
-<!ATTLIST Director directorID ID #IMPLIED>
+<!ATTLIST Director directorID ID #REQUIRED>
 <!ELEMENT Firstname (#PCDATA)>
 <!ELEMENT Lastname (#PCDATA)>
 <!ELEMENT BirthDate (#PCDATA)>
@@ -23,5 +23,5 @@
 <!ELEMENT Duration (#PCDATA)>
 <!ATTLIST Duration timeUnit (min | h) "min" >
 <!ELEMENT ReleaseDate (#PCDATA)>
-<!ELEMENT ProductionPlaces (Place*)>
+<!ELEMENT ProductionPlaces (Place+)>
 <!ELEMENT Place (#PCDATA)>
