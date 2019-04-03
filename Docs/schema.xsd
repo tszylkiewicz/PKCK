@@ -1,0 +1,129 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:group name="authorInfoGroup">
+        <xs:sequence>
+            <xs:element name="Firstname" type="xs:string" minOccurs="1" maxOccurs="30"/>
+            <xs:element name="Lastname" type="xs:string" minOccurs="1" maxOccurs="30"/>
+            <xs:element name="Index">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9]"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:element name="Collection">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="DocumentData">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="DocumentDescribe" type="xs:string"/>
+                            <xs:element name="Authors">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Author" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:group ref="authorInfoGroup">
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="CreateData" type="xs:date"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Directors">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Director" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Firstname" type="xs:string" minOccurs="1" maxOccurs="30"/>
+                                        <xs:element name="Lastname" type="xs:string" minOccurs="1" maxOccurs="30"/>
+                                        <xs:element name="BirthDate" type="xs:date"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="directorID" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="D[0-9][0-9][0-9]"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Movies">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Movie" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Title" type="xs:string" minOccurs="1" maxOccurs="150"/>
+                                        <xs:element name="Directorr">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="directorID" type="xs:string" use="required"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Genres">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Genre" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Duration">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:float">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:float">
+                                                                <xs:minInclusive value="0.0"/>
+                                                                <xs:maxInclusive value="300.0"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                        <xs:attribute name="timeUnit" type="xs:string" default="min" use="required">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                    <xs:enumeration value="min" />
+                                                                    <xs:enumeration value="h" />
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="ReleaseDate" type="xs:date"/>
+                                        <xs:element name="ProductionPlaces">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Place" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="picture" type="xs:string" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

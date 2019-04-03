@@ -1,295 +1,302 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="style.css" type="text/css"?>
-<!DOCTYPE Collection SYSTEM "definition.dtd">
 <Collection>
 	<DocumentData>
 		<DocumentDescribe>
 			This document contains information about movies and their directors.
 		</DocumentDescribe>
 		<Authors>
-			<Author>Paweł Ciupka</Author>		
-			<Author>Tomasz Szylkiewicz</Author>				
+			<Author>
+				<Firstname>Paweł</Firstname>
+				<Lastname>Ciupka</Lastname>
+				<Index>212889</Index>
+			</Author>
+			<Author>
+				<Firstname>Tomasz</Firstname>
+				<Lastname>Szylkiewicz</Lastname>
+				<Index>123456</Index>
+			</Author>
 		</Authors>
 		<CreateData>08.03.2019</CreateData>
 	</DocumentData>
 	<Directors>
-		<Director directorID="D1">
-		  <Firstname>Anna</Firstname>
-		  <Lastname>Boden</Lastname>
-		  <BirthDate>20-09-1976</BirthDate>
+		<Director directorID="D001">
+			<Firstname>Anna</Firstname>
+			<Lastname>Boden</Lastname>
+			<BirthDate>20-09-1976</BirthDate>
 		</Director>
-		<Director directorID="D2">
-		  <Firstname>Jon</Firstname>
-		  <Lastname>Favreau</Lastname>
-		  <BirthDate>19-10-1966</BirthDate>
+		<Director directorID="D002">
+			<Firstname>Jon</Firstname>
+			<Lastname>Favreau</Lastname>
+			<BirthDate>19-10-1966</BirthDate>
 		</Director>
-		<Director directorID="D3">
-		  <Firstname>Ridley</Firstname>
-		  <Lastname>Scott</Lastname>
-		  <BirthDate>30-11-1937</BirthDate>
+		<Director directorID="D003">
+			<Firstname>Ridley</Firstname>
+			<Lastname>Scott</Lastname>
+			<BirthDate>30-11-1937</BirthDate>
 		</Director>
-		<Director directorID="D4">
-		  <Firstname>David</Firstname>
-		  <Lastname>Ayer</Lastname>
-		  <BirthDate>18-01-1968</BirthDate>
+		<Director directorID="D004">
+			<Firstname>David</Firstname>
+			<Lastname>Ayer</Lastname>
+			<BirthDate>18-01-1968</BirthDate>
 		</Director>
-		<Director directorID="D5">
-		  <Firstname>Alex</Firstname>
-		  <Lastname>Garland</Lastname>
-		  <BirthDate>26-05-1970</BirthDate>
+		<Director directorID="D005">
+			<Firstname>Alex</Firstname>
+			<Lastname>Garland</Lastname>
+			<BirthDate>26-05-1970</BirthDate>
 		</Director>
-		<Director directorID="D6">
-		  <Firstname>Wojciech</Firstname>
-		  <Lastname>Smarzowski</Lastname>
-		  <BirthDate>18-01-1963</BirthDate>
+		<Director directorID="D006">
+			<Firstname>Wojciech</Firstname>
+			<Lastname>Smarzowski</Lastname>
+			<BirthDate>18-01-1963</BirthDate>
 		</Director>
-		<Director directorID="D7">
-		  <Firstname>George</Firstname>
-		  <Lastname>Miller</Lastname>
-		  <BirthDate>03-03-1945</BirthDate>
+		<Director directorID="D007">
+			<Firstname>George</Firstname>
+			<Lastname>Miller</Lastname>
+			<BirthDate>03-03-1945</BirthDate>
 		</Director>
-		<Director directorID="D8">
-		  <Firstname>Denis</Firstname>
-		  <Lastname>Villeneuve</Lastname>
-		  <BirthDate>03-10-1967</BirthDate>
+		<Director directorID="D008">
+			<Firstname>Denis</Firstname>
+			<Lastname>Villeneuve</Lastname>
+			<BirthDate>03-10-1967</BirthDate>
 		</Director>
-		<Director directorID="D9">
-		  <Firstname>Joss</Firstname>
-		  <Lastname>Whedon</Lastname>
-		  <BirthDate>23-06-1964</BirthDate>
+		<Director directorID="D009">
+			<Firstname>Joss</Firstname>
+			<Lastname>Whedon</Lastname>
+			<BirthDate>23-06-1964</BirthDate>
 		</Director>
-		<Director directorID="D10">
-		  <Firstname>Scott</Firstname>
-		  <Lastname>Derrickson</Lastname>
-		  <BirthDate>16-07-1966</BirthDate>
+		<Director directorID="D010">
+			<Firstname>Scott</Firstname>
+			<Lastname>Derrickson</Lastname>
+			<BirthDate>16-07-1966</BirthDate>
 		</Director>
-		<Director directorID="D11">
-		  <Firstname>James</Firstname>
-		  <Lastname>Mangold</Lastname>
-		  <BirthDate>16-12-1963</BirthDate>
+		<Director directorID="D011">
+			<Firstname>James</Firstname>
+			<Lastname>Mangold</Lastname>
+			<BirthDate>16-12-1963</BirthDate>
 		</Director>
-		<Director directorID="D12">
-		  <Firstname>Guillermo</Firstname>
-		  <Lastname>del Torro</Lastname>
-		  <BirthDate>09-10-1964</BirthDate>
+		<Director directorID="D012">
+			<Firstname>Guillermo</Firstname>
+			<Lastname>del Torro</Lastname>
+			<BirthDate>09-10-1964</BirthDate>
 		</Director>
-		<Director directorID="D13">
-		  <Firstname>Steven</Firstname>
-		  <Lastname>Spielberg</Lastname>
-		  <BirthDate>18-12-1946</BirthDate>
+		<Director directorID="D013">
+			<Firstname>Steven</Firstname>
+			<Lastname>Spielberg</Lastname>
+			<BirthDate>18-12-1946</BirthDate>
 		</Director>
-		<Director directorID="D14">
-		  <Firstname>Morten</Firstname>
-		  <Lastname>Tyldum</Lastname>
-		  <BirthDate>19-05-1967</BirthDate>
+		<Director directorID="D014">
+			<Firstname>Morten</Firstname>
+			<Lastname>Tyldum</Lastname>
+			<BirthDate>19-05-1967</BirthDate>
 		</Director>
 	</Directors>
 	<Movies>
 		<Movie picture="yes">
-		  <Title>Kapitan Marvel</Title>
-		  <Directorr directorID="D1"/>
-		  <Genres>
-			<Genre>Action</Genre>
-			<Genre>SciFi</Genre>
-		  </Genres>
-		  <Duration timeUnit="min">124</Duration>
-		  <ReleaseDate>06-03-2019</ReleaseDate>
-		  <ProductionPlaces>
-			<Place>USA</Place>
-		  </ProductionPlaces>
+			<Title>Kapitan Marvel</Title>
+			<Directorr directorID="D001"/>
+			<Genres>
+				<Genre>Action</Genre>
+				<Genre>SciFi</Genre>
+			</Genres>
+			<Duration timeUnit="min">124</Duration>
+			<ReleaseDate>06-03-2019</ReleaseDate>
+			<ProductionPlaces>
+				<Place>USA</Place>
+			</ProductionPlaces>
 		</Movie>
 		<Movie picture="yes">
-		  <Title>Iron Man</Title>
-		  <Directorr directorID="D2"/>
-		  <Genres>
-			<Genre>Action</Genre>
-			<Genre>SciFi</Genre>
-		  </Genres>
-		  <Duration timeUnit="min">126</Duration>
-		  <ReleaseDate>14-04-2008</ReleaseDate>
-		  <ProductionPlaces>
-			<Place>USA</Place>
-		  </ProductionPlaces>
+			<Title>Iron Man</Title>
+			<Directorr directorID="D002"/>
+			<Genres>
+				<Genre>Action</Genre>
+				<Genre>SciFi</Genre>
+			</Genres>
+			<Duration timeUnit="min">126</Duration>
+			<ReleaseDate>14-04-2008</ReleaseDate>
+			<ProductionPlaces>
+				<Place>USA</Place>
+			</ProductionPlaces>
 		</Movie>
 		<Movie picture="yes">
-		  <Title>Alien Coventant</Title>
-		  <Directorr directorID="D3"/>
-		  <Genres>
-			<Genre>SciFi</Genre>
-			<Genre>Horror</Genre>
-		  </Genres>
-		  <Duration timeUnit="min">122</Duration>
-		  <ReleaseDate>04-05-2017</ReleaseDate>
-		  <ProductionPlaces>
-			<Place>USA</Place>
-			<Place>UK</Place>
-		  </ProductionPlaces>
+			<Title>Alien Coventant</Title>
+			<Directorr directorID="D003"/>
+			<Genres>
+				<Genre>SciFi</Genre>
+				<Genre>Horror</Genre>
+			</Genres>
+			<Duration timeUnit="min">122</Duration>
+			<ReleaseDate>04-05-2017</ReleaseDate>
+			<ProductionPlaces>
+				<Place>USA</Place>
+				<Place>UK</Place>
+			</ProductionPlaces>
 		</Movie>
 		<Movie picture="yes">
-		  <Title>Deadpool</Title>
-		  <Directorr directorID="D2"/>
-		  <Genres>
-			<Genre>Action</Genre>
-			<Genre>Comedy</Genre>
-			<Genre>SciFi</Genre>
-		  </Genres>
-		  <Duration timeUnit="min">108</Duration>
-		  <ReleaseDate>21-01-2016</ReleaseDate>
-		  <ProductionPlaces>
-			<Place>USA</Place>
-		  </ProductionPlaces>
+			<Title>Deadpool</Title>
+			<Directorr directorID="D002"/>
+			<Genres>
+				<Genre>Action</Genre>
+				<Genre>Comedy</Genre>
+				<Genre>SciFi</Genre>
+			</Genres>
+			<Duration timeUnit="min">108</Duration>
+			<ReleaseDate>21-01-2016</ReleaseDate>
+			<ProductionPlaces>
+				<Place>USA</Place>
+			</ProductionPlaces>
 		</Movie>
 		<Movie>
-		  <Title>Suicide Squad</Title>
-		  <Directorr directorID="D4"/>
-		  <Genres>
-			<Genre>Action</Genre>
-			<Genre>SciFi</Genre>
-		  </Genres>
-		  <Duration timeUnit="min">123</Duration>
-		  <ReleaseDate>05-06-2016</ReleaseDate>
-		  <ProductionPlaces>
-			<Place>USA</Place>
-			<Place>Canada</Place>
-		  </ProductionPlaces>
+			<Title>Suicide Squad</Title>
+			<Directorr directorID="D004"/>
+			<Genres>
+				<Genre>Action</Genre>
+				<Genre>SciFi</Genre>
+			</Genres>
+			<Duration timeUnit="min">123</Duration>
+			<ReleaseDate>05-06-2016</ReleaseDate>
+			<ProductionPlaces>
+				<Place>USA</Place>
+				<Place>Canada</Place>
+			</ProductionPlaces>
 		</Movie>
 		<Movie>
-		  <Title>Ex Machina</Title>
-		  <Directorr directorID="D5"/>
-		  <Genres>
-			<Genre>Thriller</Genre>
-			<Genre>SciFi</Genre>
-		  </Genres>
-		  <Duration timeUnit="min">108</Duration>
-		  <ReleaseDate>21-01-2015</ReleaseDate>
-		  <ProductionPlaces>
-			<Place>UK</Place>
-		  </ProductionPlaces>
+			<Title>Ex Machina</Title>
+			<Directorr directorID="D005"/>
+			<Genres>
+				<Genre>Thriller</Genre>
+				<Genre>SciFi</Genre>
+			</Genres>
+			<Duration timeUnit="min">108</Duration>
+			<ReleaseDate>21-01-2015</ReleaseDate>
+			<ProductionPlaces>
+				<Place>UK</Place>
+			</ProductionPlaces>
 		</Movie>
 		<Movie>
-		  <Title>Wołyń</Title>
-		  <Directorr directorID="D6"/>
-		  <Genres>
-			<Genre>War</Genre>
-			<Genre>Drama</Genre>
-		  </Genres>
-		  <Duration timeUnit="h">2.5</Duration>
-		  <ReleaseDate>23-09-2016</ReleaseDate>
-		  <ProductionPlaces>
-			<Place>Poland</Place>
-		  </ProductionPlaces>
+			<Title>Wołyń</Title>
+			<Directorr directorID="D006"/>
+			<Genres>
+				<Genre>War</Genre>
+				<Genre>Drama</Genre>
+			</Genres>
+			<Duration timeUnit="h">2.5</Duration>
+			<ReleaseDate>23-09-2016</ReleaseDate>
+			<ProductionPlaces>
+				<Place>Poland</Place>
+			</ProductionPlaces>
 		</Movie>
 		<Movie>
-		  <Title>Mad Max: Fury Road</Title>
-		  <Directorr directorID="D7"/>
-		  <Genres>
-			<Genre>Action</Genre>
-			<Genre>SciFi</Genre>
-		  </Genres>
-		  <Duration timeUnit="h">2</Duration>
-		  <ReleaseDate>07-05-2015</ReleaseDate>
-		  <ProductionPlaces>
-			<Place>USA</Place>
-			<Place>Australia</Place>
-		  </ProductionPlaces>
+			<Title>Mad Max: Fury Road</Title>
+			<Directorr directorID="D007"/>
+			<Genres>
+				<Genre>Action</Genre>
+				<Genre>SciFi</Genre>
+			</Genres>
+			<Duration timeUnit="h">2</Duration>
+			<ReleaseDate>07-05-2015</ReleaseDate>
+			<ProductionPlaces>
+				<Place>USA</Place>
+				<Place>Australia</Place>
+			</ProductionPlaces>
 		</Movie>
 		<Movie>
-		  <Title>Blade Runner 2049</Title>
-		  <Directorr directorID="D8"/>
-		  <Genres>
-			<Genre>Thriller</Genre>
-			<Genre>SciFi</Genre>
-		  </Genres>
-		  <Duration timeUnit="min">163</Duration>
-		  <ReleaseDate>03-10-2017</ReleaseDate>
-		  <ProductionPlaces>
-			<Place>USA</Place>
-			<Place>Canada</Place>
-			<Place>UK</Place>
-			<Place>Hungary</Place>
-		  </ProductionPlaces>
+			<Title>Blade Runner 2049</Title>
+			<Directorr directorID="D008"/>
+			<Genres>
+				<Genre>Thriller</Genre>
+				<Genre>SciFi</Genre>
+			</Genres>
+			<Duration timeUnit="min">163</Duration>
+			<ReleaseDate>03-10-2017</ReleaseDate>
+			<ProductionPlaces>
+				<Place>USA</Place>
+				<Place>Canada</Place>
+				<Place>UK</Place>
+				<Place>Hungary</Place>
+			</ProductionPlaces>
 		</Movie>
 		<Movie>
-		  <Title>Avengers: Age of Ultron</Title>
-		  <Directorr directorID="D9"/>
-		  <Genres>
-			<Genre>Action</Genre>
-			<Genre>SciFi</Genre>
-		  </Genres>
-		  <Duration timeUnit="min">141</Duration>
-		  <ReleaseDate>13-04-2015</ReleaseDate>
-		  <ProductionPlaces>
-			<Place>USA</Place>
-		  </ProductionPlaces>
+			<Title>Avengers: Age of Ultron</Title>
+			<Directorr directorID="D009"/>
+			<Genres>
+				<Genre>Action</Genre>
+				<Genre>SciFi</Genre>
+			</Genres>
+			<Duration timeUnit="min">141</Duration>
+			<ReleaseDate>13-04-2015</ReleaseDate>
+			<ProductionPlaces>
+				<Place>USA</Place>
+			</ProductionPlaces>
 		</Movie>
 		<Movie>
-		  <Title>Doctor Strange</Title>
-		  <Directorr directorID="D10"/>
-		  <Genres>
-			<Genre>Fantasy</Genre>
-			<Genre>Adventure</Genre>
-		  </Genres>
-		  <Duration timeUnit="min">115</Duration>
-		  <ReleaseDate>13-10-2016</ReleaseDate>
-		  <ProductionPlaces>
-			<Place>USA</Place>
-		  </ProductionPlaces>
+			<Title>Doctor Strange</Title>
+			<Directorr directorID="D010"/>
+			<Genres>
+				<Genre>Fantasy</Genre>
+				<Genre>Adventure</Genre>
+			</Genres>
+			<Duration timeUnit="min">115</Duration>
+			<ReleaseDate>13-10-2016</ReleaseDate>
+			<ProductionPlaces>
+				<Place>USA</Place>
+			</ProductionPlaces>
 		</Movie>
 		<Movie>
-		  <Title>Logan</Title>
-		  <Directorr directorID="D11"/>
-		  <Genres>
-			<Genre>Action</Genre>
-			<Genre>SciFi</Genre>
-			<Genre>Drama</Genre>
-		  </Genres>
-		  <Duration timeUnit="min">137</Duration>
-		  <ReleaseDate>17-02-2017</ReleaseDate>
-		  <ProductionPlaces>
-			<Place>USA</Place>
-			<Place>Canada</Place>
-			<Place>Australia</Place>
-		  </ProductionPlaces>
+			<Title>Logan</Title>
+			<Directorr directorID="D011"/>
+			<Genres>
+				<Genre>Action</Genre>
+				<Genre>SciFi</Genre>
+				<Genre>Drama</Genre>
+			</Genres>
+			<Duration timeUnit="min">137</Duration>
+			<ReleaseDate>17-02-2017</ReleaseDate>
+			<ProductionPlaces>
+				<Place>USA</Place>
+				<Place>Canada</Place>
+				<Place>Australia</Place>
+			</ProductionPlaces>
 		</Movie>
 		<Movie>
-		  <Title>The Shape of Water</Title>
-		  <Directorr directorID="D12"/>
-		  <Genres>
-			<Genre>Fantasy</Genre>
-		  </Genres>
-		  <Duration timeUnit="min">119</Duration>
-		  <ReleaseDate>16-09-2017</ReleaseDate>
-		  <ProductionPlaces>
-			<Place>USA</Place>
-		  </ProductionPlaces>
+			<Title>The Shape of Water</Title>
+			<Directorr directorID="D012"/>
+			<Genres>
+				<Genre>Fantasy</Genre>
+			</Genres>
+			<Duration timeUnit="min">119</Duration>
+			<ReleaseDate>16-09-2017</ReleaseDate>
+			<ProductionPlaces>
+				<Place>USA</Place>
+			</ProductionPlaces>
 		</Movie>
 		<Movie>
-		  <Title>Brigde of Spies</Title>
-		  <Directorr directorID="D13"/>
-		  <Genres>
-			<Genre>Drama</Genre>
-			<Genre>Thriller</Genre>
-		  </Genres>
-		  <Duration timeUnit="min">141</Duration>
-		  <ReleaseDate>10-09-2015</ReleaseDate>
-		  <ProductionPlaces>
-			<Place>USA</Place>
-			<Place>Germany</Place>
-			<Place>India</Place>
-		  </ProductionPlaces>
+			<Title>Brigde of Spies</Title>
+			<Directorr directorID="D013"/>
+			<Genres>
+				<Genre>Drama</Genre>
+				<Genre>Thriller</Genre>
+			</Genres>
+			<Duration timeUnit="min">141</Duration>
+			<ReleaseDate>10-09-2015</ReleaseDate>
+			<ProductionPlaces>
+				<Place>USA</Place>
+				<Place>Germany</Place>
+				<Place>India</Place>
+			</ProductionPlaces>
 		</Movie>
 		<Movie>
-		  <Title>Passengers</Title>
-		  <Directorr directorID="D14"/>
-		  <Genres>
-			<Genre>Adventure</Genre>
-			<Genre>SciFi</Genre>
-		  </Genres>
-		  <Duration timeUnit="min">116</Duration>
-		  <ReleaseDate>14-12-2016</ReleaseDate>
-		  <ProductionPlaces>
-			<Place>USA</Place>
-		  </ProductionPlaces>
+			<Title>Passengers</Title>
+			<Directorr directorID="D014"/>
+			<Genres>
+				<Genre>Adventure</Genre>
+				<Genre>SciFi</Genre>
+			</Genres>
+			<Duration timeUnit="min">116</Duration>
+			<ReleaseDate>14-12-2016</ReleaseDate>
+			<ProductionPlaces>
+				<Place>USA</Place>
+			</ProductionPlaces>
 		</Movie>
 	</Movies>
 </Collection>
