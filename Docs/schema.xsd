@@ -1,20 +1,7 @@
+<?xml version = "1.0" encoding="utf-8"?>
+
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" 
     xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-    <xs:group name="authorInfoGroup">
-        <xs:sequence>
-            <xs:element name="Firstname" type="xs:string" minOccurs="1" maxOccurs="30"/>
-            <xs:element name="Lastname" type="xs:string" minOccurs="1" maxOccurs="30"/>
-            <xs:element name="Index">
-                <xs:simpleType>
-                    <xs:restriction base="xs:integer">
-                        <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9]"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-        </xs:sequence>
-    </xs:group>
-
     <xs:element name="Collection">
         <xs:complexType>
             <xs:sequence>
@@ -28,7 +15,7 @@
                                     <xs:sequence>
                                         <xs:element name="Author" minOccurs="0" maxOccurs="unbounded">
                                             <xs:complexType>
-                                                <xs:group ref="authorInfoGroup">
+                                                <xs:group ref="authorInfoGroup"/>
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
@@ -88,14 +75,8 @@
                                         <xs:element name="Duration">
                                             <xs:complexType>
                                                 <xs:simpleContent>
-                                                    <xs:extension base="xs:float">
-                                                        <xs:simpleType>
-                                                            <xs:restriction base="xs:float">
-                                                                <xs:minInclusive value="0.0"/>
-                                                                <xs:maxInclusive value="300.0"/>
-                                                            </xs:restriction>
-                                                        </xs:simpleType>
-                                                        <xs:attribute name="timeUnit" type="xs:string" default="min" use="required">
+                                                    <xs:extension base="durationValue">
+                                                        <xs:attribute name="timeUnit" default="min" use="optional">
                                                             <xs:simpleType>
                                                                 <xs:restriction base="xs:string">
                                                                     <xs:enumeration value="min" />
@@ -126,4 +107,27 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+    
+    <xs:group name="authorInfoGroup">
+        <xs:sequence>
+            <xs:element name="Firstname" type="xs:string" minOccurs="1" maxOccurs="30"/>
+            <xs:element name="Lastname" type="xs:string" minOccurs="1" maxOccurs="30"/>
+            <xs:element name="Index">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9]"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:simpleType name="durationValue">
+        <xs:restriction base="xs:float">
+            <xs:minInclusive value="0.0"/>
+            <xs:maxInclusive value="300.0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
 </xs:schema>
