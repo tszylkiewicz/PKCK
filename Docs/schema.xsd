@@ -30,8 +30,20 @@
                             <xs:element name="Director" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="Firstname" type="xs:string" minOccurs="1" maxOccurs="30"/>
-                                        <xs:element name="Lastname" type="xs:string" minOccurs="1" maxOccurs="30"/>
+                                        <xs:element name="Firstname">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[A-Z]([a-z])+"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Lastname">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[A-Z]([a-z])+(\s[A-Z]([a-z])+)?"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
                                         <xs:element name="BirthDate" type="xs:date"/>
                                     </xs:sequence>
                                     <xs:attribute name="directorID" use="required">
@@ -67,7 +79,7 @@
                                         <xs:element name="Genres">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="Genre" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                                                    <xs:element name="Genre" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
@@ -91,12 +103,19 @@
                                         <xs:element name="ProductionPlaces">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="Place" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                                                    <xs:element name="Place" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
-                                    <xs:attribute name="picture" type="xs:string" use="optional"/>
+                                    <xs:attribute name="picture" use="optional">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="yes" />
+                                                <xs:enumeration value="no" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -111,7 +130,7 @@
         </xs:key>
 
         <xs:keyref name="directorRef" refer="directorID">
-            <xs:selector xpath="Collection/Movies/Movie/Directorr"/>
+            <xs:selector xpath="Collection/Movies/Movie/Director"/>
             <xs:field xpath="@directorID"/>
         </xs:keyref>
     </xs:element>
@@ -119,8 +138,20 @@
 
     <xs:group name="authorInfoGroup">
         <xs:sequence>
-            <xs:element name="Firstname" type="xs:string" minOccurs="1" maxOccurs="30"/>
-            <xs:element name="Lastname" type="xs:string" minOccurs="1" maxOccurs="30"/>
+            <xs:element name="Firstname">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Z]([a-z|ł])+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Lastname">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Z]([a-z])+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
             <xs:element name="Index">
                 <xs:simpleType>
                     <xs:restriction base="xs:integer">
