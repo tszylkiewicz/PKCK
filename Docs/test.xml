@@ -1,0 +1,288 @@
+<MoviesCollection>
+   <Movie>
+      <No>1.</No>
+      <Title>Kapitan Marvel</Title>
+      <Director>
+         <Firstname>Anna</Firstname>
+         <Lastname>Boden</Lastname>
+         <BirthDate>1976-09-20</BirthDate>
+      </Director>
+      <ReleaseDate>2019-03-06</ReleaseDate>
+      <Duration>124 min</Duration>
+      <Genres>
+				Action
+				SciFi
+      </Genres>
+      <ProductionPlaces>
+				USA
+      </ProductionPlaces>
+   </Movie>
+   <Movie>
+      <No>2.</No>
+      <Title>Blade Runner 2049</Title>
+      <Director>
+         <Firstname>Denis</Firstname>
+         <Lastname>Villeneuve</Lastname>
+         <BirthDate>1967-10-03</BirthDate>
+      </Director>
+      <ReleaseDate>2017-10-03</ReleaseDate>
+      <Duration>163 min</Duration>
+      <Genres>
+				Thriller
+				SciFi
+      </Genres>
+      <ProductionPlaces>
+				USA
+				Canada
+				UK
+				Hungary
+      </ProductionPlaces>
+   </Movie>
+   <Movie>
+      <No>3.</No>
+      <Title>The Shape of Water</Title>
+      <Director>
+         <Firstname>Guillermo</Firstname>
+         <Lastname>Del Torro</Lastname>
+         <BirthDate>1964-10-09</BirthDate>
+      </Director>
+      <ReleaseDate>2017-09-16</ReleaseDate>
+      <Duration>119 min</Duration>
+      <Genres>
+				Fantasy
+      </Genres>
+      <ProductionPlaces>
+				USA
+      </ProductionPlaces>
+   </Movie>
+   <Movie>
+      <No>4.</No>
+      <Title>Alien Coventant</Title>
+      <Director>
+         <Firstname>Ridley</Firstname>
+         <Lastname>Scott</Lastname>
+         <BirthDate>1937-11-30</BirthDate>
+      </Director>
+      <ReleaseDate>2017-05-04</ReleaseDate>
+      <Duration>122 min</Duration>
+      <Genres>
+				SciFi
+				Horror
+      </Genres>
+      <ProductionPlaces>
+				USA
+				UK
+      </ProductionPlaces>
+   </Movie>
+   <Movie>
+      <No>5.</No>
+      <Title>Logan</Title>
+      <Director>
+         <Firstname>James</Firstname>
+         <Lastname>Mangold</Lastname>
+         <BirthDate>1963-12-16</BirthDate>
+      </Director>
+      <ReleaseDate>2017-02-17</ReleaseDate>
+      <Duration>137 min</Duration>
+      <Genres>
+				Action
+				SciFi
+				Drama
+      </Genres>
+      <ProductionPlaces>
+				USA
+				Canada
+				Australia
+      </ProductionPlaces>
+   </Movie>
+   <Movie>
+      <No>6.</No>
+      <Title>Passengers</Title>
+      <Director>
+         <Firstname>Morten</Firstname>
+         <Lastname>Tyldum</Lastname>
+         <BirthDate>1967-05-19</BirthDate>
+      </Director>
+      <ReleaseDate>2016-12-14</ReleaseDate>
+      <Duration>116 min</Duration>
+      <Genres>
+				Adventure
+				SciFi
+      </Genres>
+      <ProductionPlaces>
+				USA
+      </ProductionPlaces>
+   </Movie>
+   <Movie>
+      <No>7.</No>
+      <Title>Doctor Strange</Title>
+      <Director>
+         <Firstname>Scott</Firstname>
+         <Lastname>Derrickson</Lastname>
+         <BirthDate>1966-07-16</BirthDate>
+      </Director>
+      <ReleaseDate>2016-10-13</ReleaseDate>
+      <Duration>115 min</Duration>
+      <Genres>
+				Fantasy
+				Adventure
+      </Genres>
+      <ProductionPlaces>
+				USA
+      </ProductionPlaces>
+   </Movie>
+   <Movie>
+      <No>8.</No>
+      <Title>Wołyń</Title>
+      <Director>
+         <Firstname>Wojciech</Firstname>
+         <Lastname>Smarzowski</Lastname>
+         <BirthDate>1963-01-18</BirthDate>
+      </Director>
+      <ReleaseDate>2016-09-23</ReleaseDate>
+      <Duration>2.5 h</Duration>
+      <Genres>
+				War
+				Drama
+      </Genres>
+      <ProductionPlaces>
+				Poland
+      </ProductionPlaces>
+   </Movie>
+   <Movie>
+      <No>9.</No>
+      <Title>Suicide Squad</Title>
+      <Director>
+         <Firstname>David</Firstname>
+         <Lastname>Ayer</Lastname>
+         <BirthDate>1968-01-18</BirthDate>
+      </Director>
+      <ReleaseDate>2016-06-05</ReleaseDate>
+      <Duration>123 min</Duration>
+      <Genres>
+				Action
+				SciFi
+      </Genres>
+      <ProductionPlaces>
+				USA
+				Canada
+      </ProductionPlaces>
+   </Movie>
+   <Movie>
+      <No>10.</No>
+      <Title>Deadpool</Title>
+      <Director>
+         <Firstname>Jon</Firstname>
+         <Lastname>Favreau</Lastname>
+         <BirthDate>1966-10-19</BirthDate>
+      </Director>
+      <ReleaseDate>2016-01-21</ReleaseDate>
+      <Duration>108 min</Duration>
+      <Genres>
+				Action
+				Comedy
+				SciFi
+      </Genres>
+      <ProductionPlaces>
+				USA
+      </ProductionPlaces>
+   </Movie>
+   <Movie>
+      <No>11.</No>
+      <Title>Brigde of Spies</Title>
+      <Director>
+         <Firstname>Steven</Firstname>
+         <Lastname>Spielberg</Lastname>
+         <BirthDate>1946-12-18</BirthDate>
+      </Director>
+      <ReleaseDate>2015-09-10</ReleaseDate>
+      <Duration>141 min</Duration>
+      <Genres>
+				Drama
+				Thriller
+      </Genres>
+      <ProductionPlaces>
+				USA
+				Germany
+				India
+      </ProductionPlaces>
+   </Movie>
+   <Movie>
+      <No>12.</No>
+      <Title>Mad Max: Fury Road</Title>
+      <Director>
+         <Firstname>George</Firstname>
+         <Lastname>Miller</Lastname>
+         <BirthDate>1945-03-03</BirthDate>
+      </Director>
+      <ReleaseDate>2015-05-07</ReleaseDate>
+      <Duration>2 h</Duration>
+      <Genres>
+				Action
+				SciFi
+      </Genres>
+      <ProductionPlaces>
+				USA
+				Australia
+      </ProductionPlaces>
+   </Movie>
+   <Movie>
+      <No>13.</No>
+      <Title>Avengers: Age of Ultron</Title>
+      <Director>
+         <Firstname>Joss</Firstname>
+         <Lastname>Whedon</Lastname>
+         <BirthDate>1964-06-23</BirthDate>
+      </Director>
+      <ReleaseDate>2015-04-13</ReleaseDate>
+      <Duration>141 min</Duration>
+      <Genres>
+				Action
+				SciFi
+      </Genres>
+      <ProductionPlaces>
+				USA
+      </ProductionPlaces>
+   </Movie>
+   <Movie>
+      <No>14.</No>
+      <Title>Ex Machina</Title>
+      <Director>
+         <Firstname>Alex</Firstname>
+         <Lastname>Garland</Lastname>
+         <BirthDate>1970-05-26</BirthDate>
+      </Director>
+      <ReleaseDate>2015-01-21</ReleaseDate>
+      <Duration>108 min</Duration>
+      <Genres>
+				Thriller
+				SciFi
+      </Genres>
+      <ProductionPlaces>
+				UK
+      </ProductionPlaces>
+   </Movie>
+   <Movie>
+      <No>15.</No>
+      <Title>Iron Man</Title>
+      <Director>
+         <Firstname>Jon</Firstname>
+         <Lastname>Favreau</Lastname>
+         <BirthDate>1966-10-19</BirthDate>
+      </Director>
+      <ReleaseDate>2008-04-14</ReleaseDate>
+      <Duration>126 min</Duration>
+      <Genres>
+				Action
+				SciFi
+      </Genres>
+      <ProductionPlaces>
+				USA
+      </ProductionPlaces>
+   </Movie>
+   <Conclusion>
+      <MoviesCount>15</MoviesCount>
+      <DirectorsCount>14</DirectorsCount>
+      <CreareDate>2019-05-01</CreareDate>
+   </Conclusion>
+</MoviesCollection>

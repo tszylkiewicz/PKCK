@@ -1,0 +1,8 @@
+.movieTable td{
+    border: 1px solid black;
+    width: 10vw;
+}
+
+.movieTable tr:first-child{
+    background-color: #9acd32;
+}

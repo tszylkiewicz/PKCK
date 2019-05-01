@@ -1,87 +1,60 @@
-<?xml version="1.0"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
+    <xsl:output method="xml" encoding="utf-8"/>
     <xsl:template match="/">
-        <html>
-            <body>
-                <h2>Movies Collection</h2>
-                <table border="1">
-                    <tr bgcolor="#9acd32">
-                        <th/>
-                        <th>Title</th>
-                        <th>Director</th>
-                        <th>Realease Date</th>
-                        <th>Duration</th>
-                        <th>Genres</th>
-                        <th>Production Places</th>
-                    </tr>
-                    <xsl:for-each select="Collection/Movies/Movie">
-                        <xsl:sort select="ReleaseDate"/>
-                        <tr>
-                            <td>
-                                <countNo>
-                                    <xsl:value-of select="concat(position(), '.')" />
-                                </countNo>
-                            </td>
-                            <td>
-                                <xsl:value-of select="Title"/>
-                            </td>
-                            <td>
-                                <xsl:variable name="idref" select="Director/@directorID" />
-                                <xsl:value-of select="concat(ancestor::*/Directors/Director[@directorID = $idref]/Firstname, ' ', ancestor::*/Directors/Director[@directorID = $idref]/Lastname, ' ', ancestor::*/Directors/Director[@directorID = $idref]/BirthDate)" />
-                            </td>
-                            <td>
-                                <xsl:value-of select="ReleaseDate"/>
-                            </td>
-                            <td>
-                                <xsl:value-of select="concat(Duration, ' ', Duration/@timeUnit)"/>
-                            </td>
-                            <td>
-                                <xsl:for-each select="Genres">
-                                    <table>
-                                        <tr>
-                                            <xsl:value-of select="."/>
-                                        </tr>
-                                    </table>
-                                </xsl:for-each>
-                            </td>
-                            <td>
-                                <xsl:for-each select="ProductionPlaces">
-                                    <table>
-                                        <tr>
-                                            <xsl:value-of select="."/>
-                                        </tr>
-                                    </table>
-                                </xsl:for-each>
-                            </td>
-                        </tr>
-                    </xsl:for-each>
-                </table>
-                <h2>DataSet Information</h2>
-                <table border="1">
-                    <tr>
-                        <td>Movies Count</td>
-                        <td>
-                            <xsl:value-of select="count(Collection/Movies/Movie)" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Directors Count</td>
-                        <td>
-                            <xsl:value-of select="count(Collection/Directors/Director)" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Creation Date</td>
-                        <td>
-                            <xsl:value-of select="current-dateTime()"/>
-                        </td>
-                    </tr>
-                </table>
-            </body>
-        </html>
+        <MoviesCollection>
+            <xsl:for-each select="Collection/Movies/Movie">
+                <xsl:sort select="ReleaseDate" order="descending"/>
+                <Movie>
+                    <No>
+                        <xsl:value-of select="concat(position(), '.')"/>
+                    </No>
+                    <Title>
+                        <xsl:value-of select="Title"/>
+                    </Title>
+                    <Director>
+                        <xsl:variable name="idref" select="Director/@directorID"/>
+                        <Firstname>
+                            <xsl:value-of select="ancestor::*/Directors/Director[@directorID = $idref]/Firstname"/>
+                        </Firstname>
+                        <Lastname>
+                            <xsl:value-of select="ancestor::*/Directors/Director[@directorID = $idref]/Lastname"/>
+                        </Lastname>
+                        <BirthDate>
+                            <xsl:value-of select="ancestor::*/Directors/Director[@directorID = $idref]/BirthDate"/>
+                        </BirthDate>
+                    </Director>
+                    <ReleaseDate>
+                        <xsl:value-of select="ReleaseDate"/>
+                    </ReleaseDate>
+                    <Duration>
+                        <xsl:value-of select="concat(Duration, ' ', Duration/@timeUnit)"/>
+                    </Duration>
+                    <Genres>
+                        <xsl:for-each select="Genres">
+                            <xsl:value-of select="."/>
+                        </xsl:for-each>
+                    </Genres>
+                    <ProductionPlaces>
+                        <xsl:for-each select="ProductionPlaces">
+                            <xsl:value-of select="."/>
+                        </xsl:for-each>
+                    </ProductionPlaces>
+                </Movie>
+            </xsl:for-each>
+            <Conclusion>
+                <MoviesCount>
+                    <xsl:value-of select="count(Collection/Movies/Movie)" />
+                </MoviesCount>
+                <DirectorsCount>
+                    <xsl:value-of select="count(Collection/Directors/Director)" />
+                </DirectorsCount>
+                <CreareDate>
+                    <xsl:value-of select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
+                </CreareDate>
+            </Conclusion>
+        </MoviesCollection>
     </xsl:template>
 
 </xsl:stylesheet>
