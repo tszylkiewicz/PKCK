@@ -90,6 +90,23 @@
                     </xs:simpleContent>
                 </xs:complexType>
             </xs:element>
+            <xs:element name="Cost">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="costValue">
+                            <xs:attribute name="currency" default="PLN" use="optional">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="PLN" />
+                                        <xs:enumeration value="USD" />
+                                        <xs:enumeration value="EUR" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
             <xs:element name="ReleaseDate" type="xs:date"/>
             <xs:element name="ProductionPlaces">
                 <xs:complexType>
@@ -137,6 +154,13 @@
         <xs:restriction base="xs:float">
             <xs:minInclusive value="0.0"/>
             <xs:maxInclusive value="300.0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="costValue">
+        <xs:restriction base="xs:float">
+            <xs:minInclusive value="5.0"/>
+            <xs:maxInclusive value="50.0"/>
         </xs:restriction>
     </xs:simpleType>
 

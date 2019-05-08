@@ -31,6 +31,9 @@
                     <Duration>
                         <xsl:value-of select="concat(Duration, ' ', Duration/@timeUnit)"/>
                     </Duration>
+                    <Cost>
+                        <xsl:value-of select="concat(Cost, ' ', Cost/@currency)"/>
+                    </Cost>
                     <Genres>
                         <xsl:for-each select="Genres">
                             <xsl:value-of select="."/>
@@ -50,6 +53,9 @@
                 <DirectorsCount>
                     <xsl:value-of select="count(Collection/Directors/Director)" />
                 </DirectorsCount>
+                <TotalCost>
+                    <xsl:value-of select="sum(Collection/Movies/Movie/Cost)" />
+                </TotalCost>
                 <CreareDate>
                     <xsl:value-of select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
                 </CreareDate>

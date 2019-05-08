@@ -43,6 +43,9 @@
                                 <xsl:value-of select="Duration"/>
                             </td>
                             <td>
+                                <xsl:value-of select="Cost"/>
+                            </td>
+                            <td>
                                 <xsl:value-of select="Genres"/>
                             </td>
                             <td>
@@ -56,6 +59,7 @@
                     <tr>
                         <th>Movies Count</th>
                         <th>Directors Count</th>
+                        <th>Total cost</th>
                         <th>Creation Date</th>
                     </tr>
                     <xsl:for-each select="MoviesCollection/Conclusion">
@@ -65,6 +69,9 @@
                             </td>
                             <td>
                                 <xsl:value-of select="DirectorsCount"/>
+                            </td>
+                            <td>
+                                <xsl:value-of select="TotalCost"/>
                             </td>
                             <td>
                                 <xsl:value-of select="CreareDate"/>
