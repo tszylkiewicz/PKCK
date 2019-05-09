@@ -1,5 +1,3 @@
-
-
 <MoviesCollection>
    <Movie>
       <No>1.</No>
@@ -300,8 +298,7 @@
    <Conclusion>
       <MoviesCount>15</MoviesCount>
       <DirectorsCount>14</DirectorsCount>
-      <TotalCost>330 </TotalCost>
+      <TotalCost>330 PLN</TotalCost>
       <CreareDate>2019-05-09</CreareDate>
    </Conclusion>
 </MoviesCollection>
-
