@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:output method="xml" encoding="utf-8"/>
+    <xsl:output method="xml" version="1.0" encoding="UTF-8"/>
     <xsl:template match="/">
         <MoviesCollection>
             <xsl:for-each select="Collection/Movies/Movie">
@@ -29,10 +29,27 @@
                         <xsl:value-of select="ReleaseDate"/>
                     </ReleaseDate>
                     <Duration>
-                        <xsl:value-of select="concat(Duration, ' ', Duration/@timeUnit)"/>
+                        <xsl:choose>
+                            <xsl:when test="Duration/@timeUnit='h'">
+                                <xsl:value-of select="concat(Duration*60, ' ', 'min')"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="concat(Duration, ' ', Duration/@timeUnit)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </Duration>
                     <Cost>
-                        <xsl:value-of select="concat(Cost, ' ', Cost/@currency)"/>
+                        <xsl:choose>
+                            <xsl:when test="Cost/@currency='USD'">
+                                <xsl:value-of select="concat(Cost*3.8, ' ', 'PLN')"/>
+                            </xsl:when>
+                            <xsl:when test="Cost/@currency='EUR'">
+                                <xsl:value-of select="concat(Cost*4.2, ' ', 'PLN')"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="concat(Cost, ' ', Cost/@currency)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </Cost>
                     <Genres>
                         <xsl:for-each select="Genres">

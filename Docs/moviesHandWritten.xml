@@ -114,7 +114,7 @@
 				<Genre>SciFi</Genre>
 			</Genres>
 			<Duration timeUnit="min">126</Duration>
-			<Cost currency="PLN">16</Cost>
+			<Cost currency="EUR">16</Cost>
 			<ReleaseDate>2008-04-14</ReleaseDate>
 			<ProductionPlaces>
 				<Place>USA</Place>
@@ -128,7 +128,7 @@
 				<Genre>Horror</Genre>
 			</Genres>
 			<Duration timeUnit="min">122</Duration>
-			<Cost currency="PLN">17</Cost>
+			<Cost currency="USD">17</Cost>
 			<ReleaseDate>2017-05-04</ReleaseDate>
 			<ProductionPlaces>
 				<Place>USA</Place>
