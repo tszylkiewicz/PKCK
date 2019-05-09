@@ -54,7 +54,7 @@
                     <xsl:value-of select="count(Collection/Directors/Director)" />
                 </DirectorsCount>
                 <TotalCost>
-                    <xsl:value-of select="sum(Collection/Movies/Movie/Cost)" />
+                    <xsl:value-of select="concat(sum(Collection/Movies/Movie/Cost), ' ', Cost/@currency)" />
                 </TotalCost>
                 <CreareDate>
                     <xsl:value-of select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>

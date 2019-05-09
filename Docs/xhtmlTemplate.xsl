@@ -6,7 +6,7 @@
         </xsl:text>
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
-                <title>Movies Collection</title>
+                <title>Movies Collection - XHTML</title>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
                 <link rel="stylesheet" href="panel.css" />
             </head>
@@ -19,6 +19,7 @@
                         <th>Director</th>
                         <th>Realease Date</th>
                         <th>Duration</th>
+                        <th>Cost</th>
                         <th>Genres</th>
                         <th>Production Places</th>
                     </tr>

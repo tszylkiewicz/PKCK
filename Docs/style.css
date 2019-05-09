@@ -201,7 +201,7 @@ Movies Movie:hover {
 	color: #fff;
 }
 
-Movie Title, Movie Genres, Movie Duration, Movie ReleaseDate, Movie ProductionPlaces {
+Movie Title, Movie Genres, Movie Duration, Movie ReleaseDate, Movie ProductionPlaces, Movie Cost {
 	display: block;
 	font-weight: bold;
 	position: relative;
@@ -209,7 +209,7 @@ Movie Title, Movie Genres, Movie Duration, Movie ReleaseDate, Movie ProductionPl
 	margin: 0.5rem 0 0 10%;
 }
 
-Movie Title::before, Movie Genres::before, Movie Duration::before, Movie ReleaseDate::before, Movie ProductionPlaces::before {
+Movie Title::before, Movie Genres::before, Movie Duration::before, Movie ReleaseDate::before, Movie ProductionPlaces::before, Movie Cost::before {
 	content: "Tytuł";
 	font-weight: 400;
 	font-size: 0.7rem;
@@ -223,6 +223,22 @@ Movie Genres::before {
 
 Movie Duration::before {
 	content: "Czas trwania";
+}
+
+Movie Cost::before {
+	content: "Koszt biletu";
+}
+
+Movie Cost[currency="PLN"]::after {
+	content: " PLN";
+}
+
+Movie Cost[currency="USD"]::after {
+	content: " USD";
+}
+
+Movie Cost[currency="EUR"]::after {
+	content: " EUR";
 }
 
 Movie Duration[timeUnit="min"]::after {
