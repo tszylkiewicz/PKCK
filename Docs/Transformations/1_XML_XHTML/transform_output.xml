@@ -13,10 +13,10 @@
       <Genres>
 				Action
 				SciFi
-      </Genres>
+			</Genres>
       <ProductionPlaces>
 				USA
-      </ProductionPlaces>
+			</ProductionPlaces>
    </Movie>
    <Movie>
       <No>2.</No>
@@ -32,13 +32,13 @@
       <Genres>
 				Thriller
 				SciFi
-      </Genres>
+			</Genres>
       <ProductionPlaces>
 				USA
 				Canada
 				UK
 				Hungary
-      </ProductionPlaces>
+			</ProductionPlaces>
    </Movie>
    <Movie>
       <No>3.</No>
@@ -53,10 +53,10 @@
       <Cost>27 PLN</Cost>
       <Genres>
 				Fantasy
-      </Genres>
+			</Genres>
       <ProductionPlaces>
 				USA
-      </ProductionPlaces>
+			</ProductionPlaces>
    </Movie>
    <Movie>
       <No>4.</No>
@@ -68,15 +68,15 @@
       </Director>
       <ReleaseDate>2017-05-04</ReleaseDate>
       <Duration>122 min</Duration>
-      <Cost>64.6 PLN</Cost>
+      <Cost>17 PLN</Cost>
       <Genres>
 				SciFi
 				Horror
-      </Genres>
+			</Genres>
       <ProductionPlaces>
 				USA
 				UK
-      </ProductionPlaces>
+			</ProductionPlaces>
    </Movie>
    <Movie>
       <No>5.</No>
@@ -93,12 +93,12 @@
 				Action
 				SciFi
 				Drama
-      </Genres>
+			</Genres>
       <ProductionPlaces>
 				USA
 				Canada
 				Australia
-      </ProductionPlaces>
+			</ProductionPlaces>
    </Movie>
    <Movie>
       <No>6.</No>
@@ -114,10 +114,10 @@
       <Genres>
 				Adventure
 				SciFi
-      </Genres>
+			</Genres>
       <ProductionPlaces>
 				USA
-      </ProductionPlaces>
+			</ProductionPlaces>
    </Movie>
    <Movie>
       <No>7.</No>
@@ -133,10 +133,10 @@
       <Genres>
 				Fantasy
 				Adventure
-      </Genres>
+			</Genres>
       <ProductionPlaces>
 				USA
-      </ProductionPlaces>
+			</ProductionPlaces>
    </Movie>
    <Movie>
       <No>8.</No>
@@ -152,10 +152,10 @@
       <Genres>
 				War
 				Drama
-      </Genres>
+			</Genres>
       <ProductionPlaces>
 				Poland
-      </ProductionPlaces>
+			</ProductionPlaces>
    </Movie>
    <Movie>
       <No>9.</No>
@@ -171,11 +171,11 @@
       <Genres>
 				Action
 				SciFi
-      </Genres>
+			</Genres>
       <ProductionPlaces>
 				USA
 				Canada
-      </ProductionPlaces>
+			</ProductionPlaces>
    </Movie>
    <Movie>
       <No>10.</No>
@@ -192,10 +192,10 @@
 				Action
 				Comedy
 				SciFi
-      </Genres>
+			</Genres>
       <ProductionPlaces>
 				USA
-      </ProductionPlaces>
+			</ProductionPlaces>
    </Movie>
    <Movie>
       <No>11.</No>
@@ -211,12 +211,12 @@
       <Genres>
 				Drama
 				Thriller
-      </Genres>
+			</Genres>
       <ProductionPlaces>
 				USA
 				Germany
 				India
-      </ProductionPlaces>
+			</ProductionPlaces>
    </Movie>
    <Movie>
       <No>12.</No>
@@ -232,11 +232,11 @@
       <Genres>
 				Action
 				SciFi
-      </Genres>
+			</Genres>
       <ProductionPlaces>
 				USA
 				Australia
-      </ProductionPlaces>
+			</ProductionPlaces>
    </Movie>
    <Movie>
       <No>13.</No>
@@ -252,10 +252,10 @@
       <Genres>
 				Action
 				SciFi
-      </Genres>
+			</Genres>
       <ProductionPlaces>
 				USA
-      </ProductionPlaces>
+			</ProductionPlaces>
    </Movie>
    <Movie>
       <No>14.</No>
@@ -271,10 +271,10 @@
       <Genres>
 				Thriller
 				SciFi
-      </Genres>
+			</Genres>
       <ProductionPlaces>
 				UK
-      </ProductionPlaces>
+			</ProductionPlaces>
    </Movie>
    <Movie>
       <No>15.</No>
@@ -286,19 +286,22 @@
       </Director>
       <ReleaseDate>2008-04-14</ReleaseDate>
       <Duration>126 min</Duration>
-      <Cost>67.2 PLN</Cost>
+      <Cost>16 PLN</Cost>
       <Genres>
 				Action
 				SciFi
-      </Genres>
+			</Genres>
       <ProductionPlaces>
 				USA
-      </ProductionPlaces>
+			</ProductionPlaces>
    </Movie>
    <Conclusion>
       <MoviesCount>15</MoviesCount>
       <DirectorsCount>14</DirectorsCount>
       <TotalCost>330 PLN</TotalCost>
-      <CreareDate>2019-05-09</CreareDate>
+      <AverageCost>22 PLN</AverageCost>
+      <MinCost>15 PLN</MinCost>
+      <MaxCost>29 PLN</MaxCost>
+      <CreareDate>2019-05-17</CreareDate>
    </Conclusion>
 </MoviesCollection>
