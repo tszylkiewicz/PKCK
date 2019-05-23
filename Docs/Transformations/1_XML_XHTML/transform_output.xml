@@ -8,15 +8,15 @@
          <BirthDate>1976-09-20</BirthDate>
       </Director>
       <ReleaseDate>2019-03-06</ReleaseDate>
-      <Duration>124 min</Duration>
-      <Cost>15 PLN</Cost>
+      <Duration timeUnit="min">124</Duration>
+      <Cost currency="PLN">15</Cost>
       <Genres>
 				Action
 				SciFi
-			</Genres>
+      </Genres>
       <ProductionPlaces>
 				USA
-			</ProductionPlaces>
+      </ProductionPlaces>
    </Movie>
    <Movie>
       <No>2.</No>
@@ -27,18 +27,18 @@
          <BirthDate>1967-10-03</BirthDate>
       </Director>
       <ReleaseDate>2017-10-03</ReleaseDate>
-      <Duration>163 min</Duration>
-      <Cost>23 PLN</Cost>
+      <Duration timeUnit="min">163</Duration>
+      <Cost currency="PLN">23</Cost>
       <Genres>
 				Thriller
 				SciFi
-			</Genres>
+      </Genres>
       <ProductionPlaces>
 				USA
 				Canada
 				UK
 				Hungary
-			</ProductionPlaces>
+      </ProductionPlaces>
    </Movie>
    <Movie>
       <No>3.</No>
@@ -49,14 +49,14 @@
          <BirthDate>1964-10-09</BirthDate>
       </Director>
       <ReleaseDate>2017-09-16</ReleaseDate>
-      <Duration>119 min</Duration>
-      <Cost>27 PLN</Cost>
+      <Duration timeUnit="min">119</Duration>
+      <Cost currency="PLN">27</Cost>
       <Genres>
 				Fantasy
-			</Genres>
+      </Genres>
       <ProductionPlaces>
 				USA
-			</ProductionPlaces>
+      </ProductionPlaces>
    </Movie>
    <Movie>
       <No>4.</No>
@@ -67,16 +67,16 @@
          <BirthDate>1937-11-30</BirthDate>
       </Director>
       <ReleaseDate>2017-05-04</ReleaseDate>
-      <Duration>122 min</Duration>
-      <Cost>17 PLN</Cost>
+      <Duration timeUnit="min">122</Duration>
+      <Cost currency="PLN">17</Cost>
       <Genres>
 				SciFi
 				Horror
-			</Genres>
+      </Genres>
       <ProductionPlaces>
 				USA
 				UK
-			</ProductionPlaces>
+      </ProductionPlaces>
    </Movie>
    <Movie>
       <No>5.</No>
@@ -87,18 +87,18 @@
          <BirthDate>1963-12-16</BirthDate>
       </Director>
       <ReleaseDate>2017-02-17</ReleaseDate>
-      <Duration>137 min</Duration>
-      <Cost>26 PLN</Cost>
+      <Duration timeUnit="min">137</Duration>
+      <Cost currency="PLN">26</Cost>
       <Genres>
 				Action
 				SciFi
 				Drama
-			</Genres>
+      </Genres>
       <ProductionPlaces>
 				USA
 				Canada
 				Australia
-			</ProductionPlaces>
+      </ProductionPlaces>
    </Movie>
    <Movie>
       <No>6.</No>
@@ -109,15 +109,15 @@
          <BirthDate>1967-05-19</BirthDate>
       </Director>
       <ReleaseDate>2016-12-14</ReleaseDate>
-      <Duration>116 min</Duration>
-      <Cost>29 PLN</Cost>
+      <Duration timeUnit="min">116</Duration>
+      <Cost currency="PLN">29</Cost>
       <Genres>
 				Adventure
 				SciFi
-			</Genres>
+      </Genres>
       <ProductionPlaces>
 				USA
-			</ProductionPlaces>
+      </ProductionPlaces>
    </Movie>
    <Movie>
       <No>7.</No>
@@ -128,15 +128,15 @@
          <BirthDate>1966-07-16</BirthDate>
       </Director>
       <ReleaseDate>2016-10-13</ReleaseDate>
-      <Duration>115 min</Duration>
-      <Cost>25 PLN</Cost>
+      <Duration timeUnit="min">115</Duration>
+      <Cost currency="PLN">25</Cost>
       <Genres>
 				Fantasy
 				Adventure
-			</Genres>
+      </Genres>
       <ProductionPlaces>
 				USA
-			</ProductionPlaces>
+      </ProductionPlaces>
    </Movie>
    <Movie>
       <No>8.</No>
@@ -147,15 +147,15 @@
          <BirthDate>1963-01-18</BirthDate>
       </Director>
       <ReleaseDate>2016-09-23</ReleaseDate>
-      <Duration>150 min</Duration>
-      <Cost>21 PLN</Cost>
+      <Duration timeUnit="min">150</Duration>
+      <Cost currency="PLN">21</Cost>
       <Genres>
 				War
 				Drama
-			</Genres>
+      </Genres>
       <ProductionPlaces>
 				Poland
-			</ProductionPlaces>
+      </ProductionPlaces>
    </Movie>
    <Movie>
       <No>9.</No>
@@ -166,16 +166,16 @@
          <BirthDate>1968-01-18</BirthDate>
       </Director>
       <ReleaseDate>2016-06-05</ReleaseDate>
-      <Duration>123 min</Duration>
-      <Cost>19 PLN</Cost>
+      <Duration timeUnit="min">123</Duration>
+      <Cost currency="PLN">19</Cost>
       <Genres>
 				Action
 				SciFi
-			</Genres>
+      </Genres>
       <ProductionPlaces>
 				USA
 				Canada
-			</ProductionPlaces>
+      </ProductionPlaces>
    </Movie>
    <Movie>
       <No>10.</No>
@@ -186,16 +186,16 @@
          <BirthDate>1966-10-19</BirthDate>
       </Director>
       <ReleaseDate>2016-01-21</ReleaseDate>
-      <Duration>108 min</Duration>
-      <Cost>18 PLN</Cost>
+      <Duration timeUnit="min">108</Duration>
+      <Cost currency="PLN">18</Cost>
       <Genres>
 				Action
 				Comedy
 				SciFi
-			</Genres>
+      </Genres>
       <ProductionPlaces>
 				USA
-			</ProductionPlaces>
+      </ProductionPlaces>
    </Movie>
    <Movie>
       <No>11.</No>
@@ -206,17 +206,17 @@
          <BirthDate>1946-12-18</BirthDate>
       </Director>
       <ReleaseDate>2015-09-10</ReleaseDate>
-      <Duration>141 min</Duration>
-      <Cost>28 PLN</Cost>
+      <Duration timeUnit="min">141</Duration>
+      <Cost currency="PLN">28</Cost>
       <Genres>
 				Drama
 				Thriller
-			</Genres>
+      </Genres>
       <ProductionPlaces>
 				USA
 				Germany
 				India
-			</ProductionPlaces>
+      </ProductionPlaces>
    </Movie>
    <Movie>
       <No>12.</No>
@@ -227,16 +227,16 @@
          <BirthDate>1945-03-03</BirthDate>
       </Director>
       <ReleaseDate>2015-05-07</ReleaseDate>
-      <Duration>120 min</Duration>
-      <Cost>22 PLN</Cost>
+      <Duration timeUnit="min">120</Duration>
+      <Cost currency="PLN">22</Cost>
       <Genres>
 				Action
 				SciFi
-			</Genres>
+      </Genres>
       <ProductionPlaces>
 				USA
 				Australia
-			</ProductionPlaces>
+      </ProductionPlaces>
    </Movie>
    <Movie>
       <No>13.</No>
@@ -247,15 +247,15 @@
          <BirthDate>1964-06-23</BirthDate>
       </Director>
       <ReleaseDate>2015-04-13</ReleaseDate>
-      <Duration>141 min</Duration>
-      <Cost>24 PLN</Cost>
+      <Duration timeUnit="min">141</Duration>
+      <Cost currency="PLN">24</Cost>
       <Genres>
 				Action
 				SciFi
-			</Genres>
+      </Genres>
       <ProductionPlaces>
 				USA
-			</ProductionPlaces>
+      </ProductionPlaces>
    </Movie>
    <Movie>
       <No>14.</No>
@@ -266,15 +266,15 @@
          <BirthDate>1970-05-26</BirthDate>
       </Director>
       <ReleaseDate>2015-01-21</ReleaseDate>
-      <Duration>108 min</Duration>
-      <Cost>20 PLN</Cost>
+      <Duration timeUnit="min">108</Duration>
+      <Cost currency="PLN">20</Cost>
       <Genres>
 				Thriller
 				SciFi
-			</Genres>
+      </Genres>
       <ProductionPlaces>
 				UK
-			</ProductionPlaces>
+      </ProductionPlaces>
    </Movie>
    <Movie>
       <No>15.</No>
@@ -285,23 +285,23 @@
          <BirthDate>1966-10-19</BirthDate>
       </Director>
       <ReleaseDate>2008-04-14</ReleaseDate>
-      <Duration>126 min</Duration>
-      <Cost>16 PLN</Cost>
+      <Duration timeUnit="min">126</Duration>
+      <Cost currency="PLN">16</Cost>
       <Genres>
 				Action
 				SciFi
-			</Genres>
+      </Genres>
       <ProductionPlaces>
 				USA
-			</ProductionPlaces>
+      </ProductionPlaces>
    </Movie>
    <Conclusion>
       <MoviesCount>15</MoviesCount>
       <DirectorsCount>14</DirectorsCount>
-      <TotalCost>330 PLN</TotalCost>
-      <AverageCost>22 PLN</AverageCost>
-      <MinCost>15 PLN</MinCost>
-      <MaxCost>29 PLN</MaxCost>
-      <CreareDate>2019-05-17</CreareDate>
+      <TotalCost currency="PLN">330</TotalCost>
+      <AverageCost currency="PLN">22</AverageCost>
+      <MinCost currency="PLN">15</MinCost>
+      <MaxCost currency="PLN">29</MaxCost>
+      <CreareDate>2019-05-23</CreareDate>
    </Conclusion>
 </MoviesCollection>

@@ -29,25 +29,27 @@
                         <xsl:value-of select="ReleaseDate"/>
                     </ReleaseDate>
                     <Duration>
+						<xsl:attribute name="timeUnit">min</xsl:attribute>
                         <xsl:choose>
                             <xsl:when test="Duration/@timeUnit='h'">
-                                <xsl:value-of select="concat(Duration*60, ' ', 'min')"/>
+                                <xsl:value-of select="Duration*60"/>
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:value-of select="concat(Duration, ' ', Duration/@timeUnit)"/>
+                                <xsl:value-of select="Duration"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </Duration>
                     <Cost>
+						<xsl:attribute name="currency">PLN</xsl:attribute>
                         <xsl:choose>
                             <xsl:when test="Cost/@currency='USD'">
-                                <xsl:value-of select="concat(Cost*3.8, ' ', 'PLN')"/>
+                                <xsl:value-of select="Cost*3.8"/>
                             </xsl:when>
                             <xsl:when test="Cost/@currency='EUR'">
-                                <xsl:value-of select="concat(Cost*4.2, ' ', 'PLN')"/>
+                                <xsl:value-of select="Cost*4.2"/>
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:value-of select="concat(Cost, ' ', Cost/@currency)"/>
+                                <xsl:value-of select="Cost"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </Cost>
@@ -72,16 +74,20 @@
                     <xsl:value-of select="count(Collection/Directors/Director)"/>
                 </DirectorsCount>
                 <TotalCost>
-                    <xsl:value-of select="concat(sum(Collection/Movies/Movie/Cost), ' PLN')"/>
+					<xsl:attribute name="currency">PLN</xsl:attribute>
+                    <xsl:value-of select="sum(Collection/Movies/Movie/Cost)"/>
                 </TotalCost>
                 <AverageCost>
-                    <xsl:value-of select="concat(sum(Collection/Movies/Movie/Cost) div count(Collection/Movies/Movie), ' PLN')"/>
+					<xsl:attribute name="currency">PLN</xsl:attribute>
+                    <xsl:value-of select="sum(Collection/Movies/Movie/Cost) div count(Collection/Movies/Movie)"/>
                 </AverageCost>
                 <MinCost>
-                    <xsl:value-of select="concat(min(Collection/Movies/Movie/Cost), ' PLN')"/>
+					<xsl:attribute name="currency">PLN</xsl:attribute>
+                    <xsl:value-of select="min(Collection/Movies/Movie/Cost)"/>
                 </MinCost>
                 <MaxCost>
-                    <xsl:value-of select="concat(max(Collection/Movies/Movie/Cost), ' PLN')"/>
+					<xsl:attribute name="currency">PLN</xsl:attribute>
+                    <xsl:value-of select="max(Collection/Movies/Movie/Cost)"/>
                 </MaxCost>
                 <CreareDate>
                     <xsl:value-of select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
