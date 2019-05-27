@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?><fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<fo:layout-master-set>
+<fo:simple-page-master page-height="297mm" page-width="210mm" margin="5mm 15mm 5mm 15mm" master-name="PageMaster">
+<fo:region-body margin="20mm 0mm 20mm 0mm"/>
+</fo:simple-page-master>
+</fo:layout-master-set>
+<fo:page-sequence master-reference="PageMaster">
+<fo:flow flow-name="xsl-region-body">
+<fo:block font-weight="bold" text-align="center" font-size="16" margin-bottom="40px">Movies Collection</fo:block>
+<fo:table table-layout="fixed" border-width="1mm" border-style="solid">
+<fo:table-column column-width="25px"/>
+<fo:table-column column-width="auto"/>
+<fo:table-column column-width="auto"/>
+<fo:table-column column-width="auto"/>
+<fo:table-column column-width="60px"/>
+<fo:table-column column-width="45px"/>
+<fo:table-column column-width="auto"/>
+<fo:table-column column-width="auto"/>
+<fo:table-header text-align="center" background-color="silver">
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block font-weight="bold">No</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block font-weight="bold">Title</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block font-weight="bold">Director</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block font-weight="bold">Release date</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block font-weight="bold">Duration</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block font-weight="bold">Cost</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block font-weight="bold">Genres</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block font-weight="bold">Production places</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-header>
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>1.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Kapitan Marvel</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Anna Boden 1976-09-20</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2019-03-06</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>124 min</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>15 PLN</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				Action
+				SciFi
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				USA
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Blade Runner 2049</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Denis Villeneuve 1967-10-03</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2017-10-03</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>163 min</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>23 PLN</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				Thriller
+				SciFi
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				USA
+				Canada
+				UK
+				Hungary
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>3.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>The Shape of Water</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Guillermo Del Torro 1964-10-09</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2017-09-16</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>119 min</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>27 PLN</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				Fantasy
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				USA
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>4.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Alien Coventant</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Ridley Scott 1937-11-30</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2017-05-04</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>122 min</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>17 PLN</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				SciFi
+				Horror
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				USA
+				UK
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>5.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Logan</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>James Mangold 1963-12-16</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2017-02-17</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>137 min</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>26 PLN</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				Action
+				SciFi
+				Drama
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				USA
+				Canada
+				Australia
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>6.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Passengers</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Morten Tyldum 1967-05-19</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2016-12-14</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>116 min</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>29 PLN</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				Adventure
+				SciFi
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				USA
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>7.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Doctor Strange</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Scott Derrickson 1966-07-16</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2016-10-13</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>115 min</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>25 PLN</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				Fantasy
+				Adventure
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				USA
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>8.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Wołyń</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Wojciech Smarzowski 1963-01-18</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2016-09-23</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>150 min</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>21 PLN</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				War
+				Drama
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				Poland
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>9.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Suicide Squad</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>David Ayer 1968-01-18</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2016-06-05</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>123 min</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>19 PLN</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				Action
+				SciFi
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				USA
+				Canada
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>10.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Deadpool</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Jon Favreau 1966-10-19</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2016-01-21</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>108 min</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>18 PLN</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				Action
+				Comedy
+				SciFi
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				USA
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>11.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Brigde of Spies</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Steven Spielberg 1946-12-18</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2015-09-10</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>141 min</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>28 PLN</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				Drama
+				Thriller
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				USA
+				Germany
+				India
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>12.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Mad Max: Fury Road</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>George Miller 1945-03-03</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2015-05-07</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>120 min</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>22 PLN</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				Action
+				SciFi
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				USA
+				Australia
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>13.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Avengers: Age of Ultron</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Joss Whedon 1964-06-23</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2015-04-13</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>141 min</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>24 PLN</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				Action
+				SciFi
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				USA
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>14.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Ex Machina</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Alex Garland 1970-05-26</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2015-01-21</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>108 min</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>20 PLN</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				Thriller
+				SciFi
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				UK
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>15.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Iron Man</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>Jon Favreau 1966-10-19</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>2008-04-14</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>126 min</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>16 PLN</fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				Action
+				SciFi
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">
+<fo:block>
+				USA
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+<fo:block font-weight="bold" text-align="center" font-size="16" margin="40px 0px 20px 0px">Conclusion</fo:block>
+<fo:block font-weight="bold" font-size="14" margin-bottom="20px">Movies count: 15</fo:block>
+<fo:block font-weight="bold" font-size="14" margin-bottom="20px">Directors count: 14</fo:block>
+<fo:block font-weight="bold" font-size="14" margin-bottom="20px">Total cost: 330 PLN</fo:block>
+<fo:block font-weight="bold" font-size="14" margin-bottom="20px">Average cost: 22 PLN</fo:block>
+<fo:block font-weight="bold" font-size="14" margin-bottom="20px">Minimum cost: 15 PLN</fo:block>
+<fo:block font-weight="bold" font-size="14" margin-bottom="20px">Maximum cost: 29 PLN</fo:block>
+<fo:block font-weight="bold" font-size="14" margin-bottom="20px">Create date: 2019-05-23</fo:block>
+</fo:flow>
+</fo:page-sequence>
+</fo:root>
