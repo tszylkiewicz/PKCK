@@ -1,0 +1,29 @@
+Movies Collection
+
+Title	|	Director Name	|	Director Birth Date	|	Release Date	|	Duration	|	Cost	|	Genres	|	Production Places
+=================================================================================================================================================================================
+1.Kapitan Marvel	|	Anna Boden	|	1976-09-20	|	2019-03-06	|	124 min	|	15 PLN	|	Action SciFi	|	USA
+2.Blade Runner 2049	|	Denis Villeneuve	|	1967-10-03	|	2017-10-03	|	163 min	|	23 PLN	|	Thriller SciFi	|	USA Canada UK Hungary
+3.The Shape of Water	|	Guillermo Del Torro	|	1964-10-09	|	2017-09-16	|	119 min	|	27 PLN	|	Fantasy	|	USA
+4.Alien Coventant	|	Ridley Scott	|	1937-11-30	|	2017-05-04	|	122 min	|	17 PLN	|	SciFi Horror	|	USA UK
+5.Logan	|	James Mangold	|	1963-12-16	|	2017-02-17	|	137 min	|	26 PLN	|	Action SciFi Drama	|	USA Canada Australia
+6.Passengers	|	Morten Tyldum	|	1967-05-19	|	2016-12-14	|	116 min	|	29 PLN	|	Adventure SciFi	|	USA
+7.Doctor Strange	|	Scott Derrickson	|	1966-07-16	|	2016-10-13	|	115 min	|	25 PLN	|	Fantasy Adventure	|	USA
+8.Wołyń	|	Wojciech Smarzowski	|	1963-01-18	|	2016-09-23	|	150 min	|	21 PLN	|	War Drama	|	Poland
+9.Suicide Squad	|	David Ayer	|	1968-01-18	|	2016-06-05	|	123 min	|	19 PLN	|	Action SciFi	|	USA Canada
+10.Deadpool	|	Jon Favreau	|	1966-10-19	|	2016-01-21	|	108 min	|	18 PLN	|	Action Comedy SciFi	|	USA
+11.Brigde of Spies	|	Steven Spielberg	|	1946-12-18	|	2015-09-10	|	141 min	|	28 PLN	|	Drama Thriller	|	USA Germany India
+12.Mad Max: Fury Road	|	George Miller	|	1945-03-03	|	2015-05-07	|	120 min	|	22 PLN	|	Action SciFi	|	USA Australia
+13.Avengers: Age of Ultron	|	Joss Whedon	|	1964-06-23	|	2015-04-13	|	141 min	|	24 PLN	|	Action SciFi	|	USA
+14.Ex Machina	|	Alex Garland	|	1970-05-26	|	2015-01-21	|	108 min	|	20 PLN	|	Thriller SciFi	|	UK
+15.Iron Man	|	Jon Favreau	|	1966-10-19	|	2008-04-14	|	126 min	|	16 PLN	|	Action SciFi	|	USA
+
+Conclusion
+
+Movies count: 15
+Directors count: 14
+Total cost: 330 PLN
+Average cost: 22 PLN
+Minimum cost: 15 PLN
+Maximum cost: 29 PLN
+Create date: 2019-05-23

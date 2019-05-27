@@ -26,23 +26,18 @@
         </xsl:for-each>
 		
 		<xsl:text>&#10;&#10;Conclusion&#10;&#10;</xsl:text>
-		<xsl:text>Movies Count&#x9;|&#x9;Directors Count&#x9;|&#x9;Total Cost&#x9;|&#x9;Average Cost&#x9;|&#x9;Min Cost&#x9;|&#x9;Max Cost&#x9;|&#x9;Create Date&#10;</xsl:text>
-		<xsl:text>=================================================================================================================================================================================</xsl:text>
-		<xsl:for-each select="MoviesCollection/Conclusion">
+            <xsl:value-of select="concat('Movies count: ', MoviesCollection/Conclusion/MoviesCount)"/>
 			<xsl:text>&#10;</xsl:text>	
-            <xsl:value-of select="MoviesCount"/>
-			<xsl:text>&#x9;|&#x9;</xsl:text>
-            <xsl:value-of select="DirectorsCount"/>
-			<xsl:text>&#x9;|&#x9;</xsl:text>
-            <xsl:value-of select="concat(TotalCost,' ',TotalCost/@currency)"/>
-            <xsl:text>&#x9;|&#x9;</xsl:text>
-            <xsl:value-of select="concat(AverageCost,' ',AverageCost/@currency)"/>
-            <xsl:text>&#x9;|&#x9;</xsl:text>
-            <xsl:value-of select="concat(MinCost,' ',MinCost/@currency)"/>
-            <xsl:text>&#x9;|&#x9;</xsl:text>
-            <xsl:value-of select="concat(MaxCost,' ',MaxCost/@currency)"/>
-            <xsl:text>&#x9;|&#x9;</xsl:text>
-            <xsl:value-of select="CreareDate"/>
-		</xsl:for-each>
+            <xsl:value-of select="concat('Directors count: ', MoviesCollection/Conclusion/DirectorsCount)"/>
+			<xsl:text>&#10;</xsl:text>	
+            <xsl:value-of select="concat('Total cost: ', MoviesCollection/Conclusion/TotalCost,' ',MoviesCollection/Conclusion/TotalCost/@currency)"/>
+            <xsl:text>&#10;</xsl:text>	
+            <xsl:value-of select="concat('Average cost: ', MoviesCollection/Conclusion/AverageCost,' ',MoviesCollection/Conclusion/AverageCost/@currency)"/>
+            <xsl:text>&#10;</xsl:text>	
+            <xsl:value-of select="concat('Minimum cost: ', MoviesCollection/Conclusion/MinCost,' ',MoviesCollection/Conclusion/MinCost/@currency)"/>
+            <xsl:text>&#10;</xsl:text>	
+            <xsl:value-of select="concat('Maximum cost: ', MoviesCollection/Conclusion/MaxCost,' ',MoviesCollection/Conclusion/MaxCost/@currency)"/>
+           <xsl:text>&#10;</xsl:text>	
+            <xsl:value-of select="concat('Create date: ', MoviesCollection/Conclusion/CreateDate)"/>
     </xsl:template>
 </xsl:stylesheet>

@@ -302,6 +302,6 @@
       <AverageCost currency="PLN">22</AverageCost>
       <MinCost currency="PLN">15</MinCost>
       <MaxCost currency="PLN">29</MaxCost>
-      <CreareDate>2019-05-23</CreareDate>
+      <CreateDate>2019-05-23</CreateDate>
    </Conclusion>
 </MoviesCollection>
