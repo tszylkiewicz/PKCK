@@ -28,7 +28,7 @@
         </xs:key>
 
         <xs:keyref name="directorRef" refer="directorID">
-            <xs:selector xpath="Movies/Movie/Director"/>
+            <xs:selector xpath="Movies/Movie"/>
             <xs:field xpath="@directorID"/>
         </xs:keyref>
     </xs:element>
@@ -58,15 +58,6 @@
     <xs:complexType name="movieType">
         <xs:sequence>
             <xs:element name="Title" type="xs:string" minOccurs="1" maxOccurs="150"/>
-            <xs:element name="Director">
-                <xs:complexType>
-                    <xs:simpleContent>
-                        <xs:extension base="xs:string">
-                            <xs:attribute name="directorID" type="directorIdType" use="required"/>
-                        </xs:extension>
-                    </xs:simpleContent>
-                </xs:complexType>
-            </xs:element>
             <xs:element name="Genres">
                 <xs:complexType>
                     <xs:sequence>
@@ -116,7 +107,8 @@
                 </xs:complexType>
             </xs:element>
         </xs:sequence>
-        <xs:attribute name="picture" type="pictureType" use="optional"/>
+        <xs:attribute name="movieID" type="movieIdType" use="required"/>
+        <xs:attribute name="directorID" type="directorIdType" use="required"/>
     </xs:complexType>
 
     <xs:complexType name="authorType">
@@ -147,6 +139,12 @@
     <xs:simpleType name="directorIdType">
         <xs:restriction base="xs:string">
             <xs:pattern value="D[0-9]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="movieIdType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="M[0-9]{3}"/>
         </xs:restriction>
     </xs:simpleType>
 

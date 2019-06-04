@@ -1,0 +1,230 @@
+﻿<Window x:Class="View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PKCK5"
+        xmlns:converters="clr-namespace:View.Converters"
+        mc:Ignorable="d"
+        Title="XML Application" Height="900" Width="1600">
+    <Window.Resources>
+        <converters:ListToStringConverter x:Key="ListToString" />
+    </Window.Resources>
+    <Grid>
+        <GroupBox Header="Movies library" Margin="0,0,0,779">
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0" Content="Paweł Ciupka" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,0,0,0" FontSize="12"/>
+                    <Label Grid.Column="0" Grid.Row="1" Content="Tomasz Szylkiewicz" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,0,0,0" FontSize="12"/>
+                    <Button Content="Load XML" Command="{Binding Click_Load_Xml}" HorizontalAlignment="Center" Width="100" Height="20" Margin="1366,10,-1304,10"/>
+                    <Button Content="Save to XML" Command="{Binding Click_Save_Xml}" HorizontalAlignment="Center" Width="100" Height="20" Margin="1470,10,-1409,10"/>
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Add Director" Margin="0,95,1005,524">
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0" Content="Firstname:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                    <TextBox Grid.Column="1" Grid.Row="0" x:Name="FirstnameBox" Text="{Binding NewDirector.Firstname}" Margin="10,0" MinWidth="225" VerticalAlignment="Center"/>
+                    <Label Grid.Column="0" Grid.Row="1" Content="Lastname:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                    <TextBox Grid.Column="1" Grid.Row="1" x:Name="LastnameBox" Text="{Binding NewDirector.Lastname}" Margin="10,0" VerticalAlignment="Center" MinWidth="225"/>
+                    <Label Grid.Column="0" Grid.Row="2" Content="Birth date:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                    <DatePicker  Grid.Column="1" Grid.Row="2" x:Name="BirthDateBox" SelectedDate="{Binding NewDirector.BirthDate, Mode=TwoWay}" SelectedDateFormat="Short" Margin="10,0" VerticalAlignment="Center" MinWidth="225">
+                        <DatePicker.Resources>
+                            <Style TargetType="DatePickerTextBox">
+                                <Setter Property="Text" Value="Select date"/>
+                            </Style>
+                        </DatePicker.Resources>
+                    </DatePicker>
+                </Grid>
+                <Button Content="Add director" Command="{Binding Click_Add_Director}" HorizontalAlignment="Center" Width="100" Height="20" Margin="0,10,0,10"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Add Movie" Margin="592,95,0,524">
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" MinWidth="190"/>
+                        <ColumnDefinition Width="Auto" MinWidth="405"/>
+                        <ColumnDefinition Width="Auto" MinWidth="120"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0" Content="Title: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                    <TextBox Grid.Column="1" Grid.Row="0" x:Name="TitleBox" Text="{Binding NewMovie.Title}" Margin="10,4" MinWidth="225" VerticalAlignment="Center"/>
+
+                    <Label Grid.Column="0" Grid.Row="1" Content="Director: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                    <ComboBox Grid.Column="1" Grid.Row="1" x:Name="DirectorBox" ItemsSource="{Binding Directors}" SelectedItem="{Binding SelectedDirector}" Margin="10,2" VerticalAlignment="Center" MinWidth="225"/>
+
+                    <Label Grid.Column="0" Grid.Row="2" Content="Release date: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                    <DatePicker Grid.Column="1" Grid.Row="2" x:Name="ReleaseDateBox" SelectedDate="{Binding NewMovie.ReleaseDate, Mode=TwoWay}" SelectedDateFormat="Short" Margin="10,4" VerticalAlignment="Center" MinWidth="225">
+                        <DatePicker.Resources>
+                            <Style TargetType="DatePickerTextBox">
+                                <Setter Property="Text" Value="Select date"/>
+                            </Style>
+                        </DatePicker.Resources>
+                    </DatePicker>
+
+                    <Label Grid.Column="0" Grid.Row="3" Content="Cost: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                    <TextBox Grid.Column="1" Grid.Row="3" x:Name="CostBox" Text="{Binding NewMovie.Cost.Value}" Margin="10,4" MinWidth="225" VerticalAlignment="Center"/>
+                    <ComboBox Grid.Column="2" Grid.Row="3" x:Name="CurrencyBox" Margin="10,2" ItemsSource="{Binding CurrencyList}" SelectedItem="{Binding SelectedCurrency}" VerticalAlignment="Center"/>
+
+                    <Label Grid.Column="0" Grid.Row="4" Content="Duration: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                    <TextBox Grid.Column="1" Grid.Row="4" x:Name="DurationBox" Text="{Binding NewMovie.Duration.Value}" Margin="10,4" MinWidth="225" VerticalAlignment="Center"/>
+                    <ComboBox Grid.Column="2" Grid.Row="4" x:Name="TimeUnitBox" Margin="10,2" ItemsSource="{Binding TimeUnitList}" SelectedItem="{Binding SelectedTimeUnit}" VerticalAlignment="Center"/>
+
+                    <Label Grid.Column="0" Grid.Row="5" Content="Production places: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                    <ComboBox Grid.Column="1" Grid.Row="5" x:Name="ProductionPlacesBox" ItemsSource="{Binding PlaceList}" SelectedItem="{Binding SelectedPlace}" Margin="10,2" VerticalAlignment="Center" MinWidth="225"/>
+
+                    <Label Grid.Column="0" Grid.Row="6" Content="Genres: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                    <ComboBox Grid.Column="1" Grid.Row="6" x:Name="GenresBox" ItemsSource="{Binding GenreList}" SelectedItem="{Binding SelectedGenre}" Margin="10,2" VerticalAlignment="Center" MinWidth="225"/>
+                </Grid>
+                <Button Content="Add movie" Command="{Binding Click_Add_Movie}" HorizontalAlignment="Center" Width="100" Height="20" Margin="0,10,0,10"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Directors" Margin="0,350,1005,0">
+            <ListBox x:Name="DirectorsListBox" ItemsSource="{Binding Collection.Directors, Mode=OneWay}" IsSynchronizedWithCurrentItem="True" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="0,0,-2,0">
+                <ListBox.Template>
+                    <ControlTemplate>
+                        <DockPanel LastChildFill="True">
+                            <Grid DockPanel.Dock="Top" Height="30">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"></ColumnDefinition>
+                                    <ColumnDefinition Width="150"></ColumnDefinition>
+                                    <ColumnDefinition Width="150"></ColumnDefinition>
+                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0">ID</Label>
+                                <Label Grid.Column="1">Firstname</Label>
+                                <Label Grid.Column="2">Lastname</Label>
+                                <Label Grid.Column="3">Birth date</Label>
+                            </Grid>
+                            <ItemsPresenter></ItemsPresenter>
+                        </DockPanel>
+                    </ControlTemplate>
+                </ListBox.Template>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition Width="80"/>
+                            </Grid.ColumnDefinitions>
+                            <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="0" Grid.Column="0"/>
+                            <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="0" Grid.Column="1"/>
+                            <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="0" Grid.Column="2"/>
+                            <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="0" Grid.Column="3"/>
+
+                            <TextBlock Grid.Column="0" Text="{Binding DirectorId}" Margin="2"/>
+                            <TextBlock Grid.Column="1" Text="{Binding Firstname}" Margin="2"/>
+                            <TextBlock Grid.Column="2" Text="{Binding Lastname}" Margin="2"/>
+                            <TextBlock Grid.Column="3" Text="{Binding BirthDate}" Margin="2"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </GroupBox>
+        <GroupBox Header="Movies" Margin="592,350,10,0">
+            <ListBox x:Name="MoviesListBox" ItemsSource="{Binding Collection.Movies}" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="0,0,-2,0">
+                <ListBox.Template>
+                    <ControlTemplate>
+                        <DockPanel LastChildFill="True">
+                            <Grid DockPanel.Dock="Top" Height="30">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition Width="150"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0">ID</Label>
+                                <Label Grid.Column="1">Title</Label>
+                                <Label Grid.Column="2">Director ID</Label>
+                                <Label Grid.Column="3">Release date</Label>
+                                <Label Grid.Column="4">Duration</Label>
+                                <Label Grid.Column="5">Cost</Label>
+                                <Label Grid.Column="6">Genres</Label>
+                                <Label Grid.Column="7">Production places</Label>
+                            </Grid>
+                            <ItemsPresenter></ItemsPresenter>
+                        </DockPanel>
+                    </ControlTemplate>
+                </ListBox.Template>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition Width="150"/>
+                            </Grid.ColumnDefinitions>
+                            <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="0" Grid.Column="0"/>
+                            <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="0" Grid.Column="1"/>
+                            <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="0" Grid.Column="2"/>
+                            <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="0" Grid.Column="3"/>
+                            <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="0" Grid.Column="4"/>
+                            <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="0" Grid.Column="5"/>
+                            <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="0" Grid.Column="6"/>
+                            <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="0" Grid.Column="7"/>
+
+                            <TextBlock Grid.Column="0" Text="{Binding MovieId}" Margin="2"/>
+                            <TextBlock Grid.Column="1" Text="{Binding Title}" Margin="2"/>
+                            <TextBlock Grid.Column="2" Text="{Binding DirectorId}" Margin="2"/>
+                            <TextBlock Grid.Column="3" Text="{Binding ReleaseDate}" Margin="2"/>
+                            <TextBlock Grid.Column="4" Margin="2">
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="{}{0} {1}">
+                                        <Binding Path="Duration.Value"/>
+                                        <Binding Path="Duration.Id"/>
+                                    </MultiBinding>
+                                </TextBlock.Text></TextBlock>
+                            <TextBlock Grid.Column="5" Margin="2">
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="{}{0} {1}">
+                                        <Binding Path="Cost.Value"/>
+                                        <Binding Path="Cost.Id"/>
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                            <TextBlock Grid.Column="6" Text="{Binding Genres, Converter={StaticResource ListToString}}" Margin="2"/>
+                            <TextBlock Grid.Column="7" Text="{Binding ProductionPlaces, Converter={StaticResource ListToString}}" Margin="2"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </GroupBox>
+    </Grid>
+</Window>

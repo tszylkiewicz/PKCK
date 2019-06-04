@@ -92,9 +92,8 @@
 		</Director>
 	</Directors>
 	<Movies>
-		<Movie picture="yes">
+		<Movie movieID="M001" directorID="D001">
 			<Title>Kapitan Marvel</Title>
-			<Director directorID="D001"/>
 			<Genres>
 				<Genre>Action</Genre>
 				<Genre>SciFi</Genre>
@@ -106,9 +105,8 @@
 				<Place>USA</Place>
 			</ProductionPlaces>
 		</Movie>
-		<Movie picture="yes">
+		<Movie movieID="M002" directorID="D002">
 			<Title>Iron Man</Title>
-			<Director directorID="D002"/>
 			<Genres>
 				<Genre>Action</Genre>
 				<Genre>SciFi</Genre>
@@ -120,9 +118,8 @@
 				<Place>USA</Place>
 			</ProductionPlaces>
 		</Movie>
-		<Movie picture="yes">
+		<Movie movieID="M003" directorID="D003">
 			<Title>Alien Coventant</Title>
-			<Director directorID="D003"/>
 			<Genres>
 				<Genre>SciFi</Genre>
 				<Genre>Horror</Genre>
@@ -135,9 +132,8 @@
 				<Place>UK</Place>
 			</ProductionPlaces>
 		</Movie>
-		<Movie picture="yes">
+		<Movie movieID="M004" directorID="D002">
 			<Title>Deadpool</Title>
-			<Director directorID="D002"/>
 			<Genres>
 				<Genre>Action</Genre>
 				<Genre>Comedy</Genre>
@@ -150,9 +146,8 @@
 				<Place>USA</Place>
 			</ProductionPlaces>
 		</Movie>
-		<Movie>
+		<Movie movieID="M005" directorID="D004">
 			<Title>Suicide Squad</Title>
-			<Director directorID="D004"/>
 			<Genres>
 				<Genre>Action</Genre>
 				<Genre>SciFi</Genre>
@@ -165,9 +160,8 @@
 				<Place>Canada</Place>
 			</ProductionPlaces>
 		</Movie>
-		<Movie>
+		<Movie movieID="M006" directorID="D005">
 			<Title>Ex Machina</Title>
-			<Director directorID="D005"/>
 			<Genres>
 				<Genre>Thriller</Genre>
 				<Genre>SciFi</Genre>
@@ -179,9 +173,8 @@
 				<Place>UK</Place>
 			</ProductionPlaces>
 		</Movie>
-		<Movie>
+		<Movie movieID="M007" directorID="D006">
 			<Title>Wołyń</Title>
-			<Director directorID="D006"/>
 			<Genres>
 				<Genre>War</Genre>
 				<Genre>Drama</Genre>
@@ -193,9 +186,8 @@
 				<Place>Poland</Place>
 			</ProductionPlaces>
 		</Movie>
-		<Movie>
+		<Movie movieID="M008" directorID="D007">
 			<Title>Mad Max: Fury Road</Title>
-			<Director directorID="D007"/>
 			<Genres>
 				<Genre>Action</Genre>
 				<Genre>SciFi</Genre>
@@ -208,9 +200,8 @@
 				<Place>Australia</Place>
 			</ProductionPlaces>
 		</Movie>
-		<Movie>
+		<Movie movieID="M009" directorID="D008">
 			<Title>Blade Runner 2049</Title>
-			<Director directorID="D008"/>
 			<Genres>
 				<Genre>Thriller</Genre>
 				<Genre>SciFi</Genre>
@@ -225,9 +216,8 @@
 				<Place>Hungary</Place>
 			</ProductionPlaces>
 		</Movie>
-		<Movie>
+		<Movie movieID="M010" directorID="D009">
 			<Title>Avengers: Age of Ultron</Title>
-			<Director directorID="D009"/>
 			<Genres>
 				<Genre>Action</Genre>
 				<Genre>SciFi</Genre>
@@ -239,9 +229,8 @@
 				<Place>USA</Place>
 			</ProductionPlaces>
 		</Movie>
-		<Movie>
+		<Movie movieID="M011" directorID="D010">
 			<Title>Doctor Strange</Title>
-			<Director directorID="D010"/>
 			<Genres>
 				<Genre>Fantasy</Genre>
 				<Genre>Adventure</Genre>
@@ -253,9 +242,8 @@
 				<Place>USA</Place>
 			</ProductionPlaces>
 		</Movie>
-		<Movie>
+		<Movie movieID="M012" directorID="D011">
 			<Title>Logan</Title>
-			<Director directorID="D011"/>
 			<Genres>
 				<Genre>Action</Genre>
 				<Genre>SciFi</Genre>
@@ -270,9 +258,8 @@
 				<Place>Australia</Place>
 			</ProductionPlaces>
 		</Movie>
-		<Movie>
+		<Movie movieID="M013" directorID="D012">
 			<Title>The Shape of Water</Title>
-			<Director directorID="D012"/>
 			<Genres>
 				<Genre>Fantasy</Genre>
 			</Genres>
@@ -283,9 +270,8 @@
 				<Place>USA</Place>
 			</ProductionPlaces>
 		</Movie>
-		<Movie>
+		<Movie movieID="M014" directorID="D013">
 			<Title>Brigde of Spies</Title>
-			<Director directorID="D013"/>
 			<Genres>
 				<Genre>Drama</Genre>
 				<Genre>Thriller</Genre>
@@ -299,9 +285,8 @@
 				<Place>India</Place>
 			</ProductionPlaces>
 		</Movie>
-		<Movie>
+		<Movie movieID="M015" directorID="D014">
 			<Title>Passengers</Title>
-			<Director directorID="D014"/>
 			<Genres>
 				<Genre>Adventure</Genre>
 				<Genre>SciFi</Genre>
