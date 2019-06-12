@@ -16,13 +16,13 @@
                     </Title>
                     <Director>
                         <Firstname>
-                            <xsl:value-of select="key('dir', Director/@directorID)/Firstname"/>
+                            <xsl:value-of select="key('dir', @directorID)/Firstname"/>
                         </Firstname>
                         <Lastname>
-                            <xsl:value-of select="key('dir', Director/@directorID)/Lastname"/>
+                            <xsl:value-of select="key('dir', @directorID)/Lastname"/>
                         </Lastname>
                         <BirthDate>
-                            <xsl:value-of select="key('dir', Director/@directorID)/BirthDate"/>
+                            <xsl:value-of select="key('dir', @directorID)/BirthDate"/>
                         </BirthDate>
                     </Director>
                     <ReleaseDate>

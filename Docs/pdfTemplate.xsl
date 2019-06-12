@@ -16,13 +16,13 @@
 					<fo:block font-weight="bold" text-align="center" font-size="16" margin-bottom="40px">Movies Collection</fo:block>
 					<fo:table table-layout="fixed" border-width="1mm" border-style="solid">
 						<fo:table-column column-width="25px"/>
-						<fo:table-column column-width="auto"/>
-						<fo:table-column column-width="auto"/>
-						<fo:table-column column-width="auto"/>
+						<fo:table-column column-width="100px"/>
+						<fo:table-column column-width="100px"/>
+						<fo:table-column column-width="100px"/>
 						<fo:table-column column-width="60px"/>
 						<fo:table-column column-width="45px"/>
-						<fo:table-column column-width="auto"/>
-						<fo:table-column column-width="auto"/>
+						<fo:table-column column-width="60px"/>
+						<fo:table-column column-width="100px"/>
 						<fo:table-header text-align="center" background-color="silver">
 							<fo:table-row>
 								<fo:table-cell padding="1mm" border-width="1mm" border-style="solid">

@@ -71,11 +71,6 @@
       <Lastname>Tyldum</Lastname>
       <BirthDate>1967-05-19</BirthDate>
     </Director>
-    <Director directorID="D015">
-      <Firstname>Nowy</Firstname>
-      <Lastname>Dyrektor</Lastname>
-      <BirthDate>2019-06-05</BirthDate>
-    </Director>
   </Directors>
   <Movies>
     <Movie movieID="M001" directorID="D001">
@@ -282,18 +277,6 @@
       </Genres>
       <ProductionPlaces>
         <Place>USA</Place>
-      </ProductionPlaces>
-    </Movie>
-    <Movie movieID="M016" directorID="D006">
-      <Title>asd312</Title>
-      <ReleaseDate>2019-06-30</ReleaseDate>
-      <Duration timeUnit="min">97845</Duration>
-      <Cost currency="PLN">123</Cost>
-      <Genres>
-        <Genre>Action</Genre>
-      </Genres>
-      <ProductionPlaces>
-        <Place>UK</Place>
       </ProductionPlaces>
     </Movie>
   </Movies>

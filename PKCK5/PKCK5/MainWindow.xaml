@@ -13,7 +13,7 @@
     <Grid>
         <GroupBox Header="Movies library" Margin="0,0,0,779">
             <StackPanel>
-                <Grid>
+                <Grid Height="70">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
@@ -25,6 +25,9 @@
                     <Label Grid.Column="0" Grid.Row="1" Content="Tomasz Szylkiewicz" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,0,0,0" FontSize="12"/>
                     <Button Content="Load XML" Command="{Binding Click_Load_Xml}" HorizontalAlignment="Center" Width="100" Height="20" Margin="1366,10,-1304,10"/>
                     <Button Content="Save to XML" Command="{Binding Click_Save_Xml}" HorizontalAlignment="Center" Width="100" Height="20" Margin="1470,10,-1409,10"/>
+                    <Button Content="Save to TXT" Command="{Binding Click_Save_To_Txt}" HorizontalAlignment="Center" Width="100" Height="20" Margin="804,12,-736,12" RenderTransformOrigin="-1.91,0.5"/>
+                    <Button Content="Save to XHTML" Command="{Binding Click_Save_To_Xhtml}" HorizontalAlignment="Center" Width="100" Height="20" Margin="908,12,-841,12" RenderTransformOrigin="-1.91,0.5"/>
+                    <Button Content="Save to PDF" Command="{Binding Click_Save_To_Pdf}" HorizontalAlignment="Center" Width="100" Height="20" Margin="1012,12,-946,12" RenderTransformOrigin="-1.91,0.5"/>
                 </Grid>
             </StackPanel>
         </GroupBox>
