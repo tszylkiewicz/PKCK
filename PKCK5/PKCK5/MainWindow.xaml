@@ -33,7 +33,7 @@
                 </Grid>
             </StackPanel>
         </GroupBox>
-        <GroupBox Header="Add Director" Margin="0,95,1005,524">
+        <GroupBox Header="Add Director" Margin="0,95,1005,477">
             <StackPanel>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -59,9 +59,11 @@
                     </DatePicker>
                 </Grid>
                 <Button Content="Add director" Command="{Binding Click_Add_Director}" HorizontalAlignment="Center" Width="100" Height="20" Margin="0,10,0,10"/>
+                <Button Content="Remove selected director" Command="{Binding Click_Remove_Director}" HorizontalAlignment="Center" Width="156" Height="24" Margin="238,10,181,10"/>
+
             </StackPanel>
         </GroupBox>
-        <GroupBox Header="Add Movie" Margin="592,95,0,524">
+        <GroupBox Header="Add Movie" Margin="592,95,0,477">
             <StackPanel>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -82,7 +84,7 @@
                     <TextBox Grid.Column="1" Grid.Row="0" x:Name="TitleBox" Text="{Binding NewMovie.Title}" Margin="10,4" MinWidth="225" VerticalAlignment="Center"/>
 
                     <Label Grid.Column="0" Grid.Row="1" Content="Director: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
-                    <ComboBox Grid.Column="1" Grid.Row="1" x:Name="DirectorBox" ItemsSource="{Binding Directors}" SelectedItem="{Binding SelectedDirector}" Margin="10,2" VerticalAlignment="Center" MinWidth="225"/>
+                    <ComboBox Grid.Column="1" Grid.Row="1" x:Name="DirectorBox" ItemsSource="{Binding Directors}" SelectedItem="{Binding SelectedDirector}"  IsSynchronizedWithCurrentItem="True" Margin="10,2" VerticalAlignment="Center" MinWidth="225"/>
 
                     <Label Grid.Column="0" Grid.Row="2" Content="Release date: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
                     <DatePicker Grid.Column="1" Grid.Row="2" x:Name="ReleaseDateBox" SelectedDate="{Binding NewMovie.ReleaseDate, Mode=TwoWay}" SelectedDateFormat="Short" Margin="10,4" VerticalAlignment="Center" MinWidth="225">
@@ -108,10 +110,12 @@
                     <ComboBox Grid.Column="1" Grid.Row="6" x:Name="GenresBox" ItemsSource="{Binding GenreList}" SelectedItem="{Binding SelectedGenre}" Margin="10,2" VerticalAlignment="Center" MinWidth="225"/>
                 </Grid>
                 <Button Content="Add movie" Command="{Binding Click_Add_Movie}" HorizontalAlignment="Center" Width="100" Height="20" Margin="0,10,0,10"/>
+                <Button Content="Remove selected movie" Command="{Binding Click_Remove_Movie}" HorizontalAlignment="Center" Width="167" Height="20" Margin="444,10,377,10"/>
+
             </StackPanel>
         </GroupBox>
-        <GroupBox Header="Directors" Margin="0,350,1005,0">
-            <ListBox x:Name="DirectorsListBox" ItemsSource="{Binding Collection.Directors, Mode=OneWay}" IsSynchronizedWithCurrentItem="True" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="0,0,-2,0">
+        <GroupBox Header="Directors" Margin="0,397,1005,0">
+            <ListBox x:Name="DirectorsListBox" ItemsSource="{Binding Collection.Directors, Mode=OneWay}" SelectedItem="{Binding SelectedDirectorr}" IsSynchronizedWithCurrentItem="True" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="0,0,-2,0">
                 <ListBox.Template>
                     <ControlTemplate>
                         <DockPanel LastChildFill="True">
@@ -154,8 +158,8 @@
                 </ListBox.ItemTemplate>
             </ListBox>
         </GroupBox>
-        <GroupBox Header="Movies" Margin="592,350,10,0">
-            <ListBox x:Name="MoviesListBox" ItemsSource="{Binding Collection.Movies}" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="0,0,-2,0">
+        <GroupBox Header="Movies" Margin="592,397,10,0">
+            <ListBox x:Name="MoviesListBox" ItemsSource="{Binding Collection.Movies}" SelectedItem="{Binding SelectedMoviee}" IsSynchronizedWithCurrentItem="True" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="0,0,-2,0">
                 <ListBox.Template>
                     <ControlTemplate>
                         <DockPanel LastChildFill="True">

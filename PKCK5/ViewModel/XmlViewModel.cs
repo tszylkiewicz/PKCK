@@ -35,14 +35,19 @@ namespace ViewModel
         public string SelectedPlace { get; set; }
         public string SelectedDirector { get; set; }
 
+        public Director SelectedDirectorr { get; set; }
+        public Movie SelectedMoviee {get; set; }
 
-        public Collection Collection { get; set; }
+        public Collection Collection { get; set; }    
         public Director NewDirector { get; set; }
         public Movie NewMovie { get; set; }
 
         public string Price { get; set; }
         public ICommand Click_Add_Director { get; }
+        public ICommand Click_Remove_Director { get; }
         public ICommand Click_Add_Movie { get; }
+        public ICommand Click_Remove_Movie { get; }
+
         public ICommand Click_Load_Xml { get; }
         public ICommand Click_Save_Xml { get; }
         public ICommand Click_Save_To_Txt { get; }
@@ -54,7 +59,9 @@ namespace ViewModel
         public XmlViewModel()
         {
             Click_Add_Director = new RelayCommand(AddDirector);
+            Click_Remove_Director = new RelayCommand(RemoveDirector);
             Click_Add_Movie = new RelayCommand(AddMovie);
+            Click_Remove_Movie = new RelayCommand(RemoveMovie);
             Click_Load_Xml = new RelayCommand(LoadXml);
             Click_Save_Xml = new RelayCommand(SaveToXml);
             Click_Save_To_Txt = new RelayCommand(TransformToTxt);
@@ -93,6 +100,7 @@ namespace ViewModel
             DateTime enteredDate = Convert.ToDateTime(NewDirector.BirthDate);
             NewDirector.BirthDate = enteredDate.ToString("yyyy-MM-dd");
 
+            Directors.Add(NewDirector.DirectorId);
             Collection.Directors.Add(NewDirector);
             NewDirector = new Director();
             Directors = Collection.GetAllDirectorKeys();
@@ -117,6 +125,14 @@ namespace ViewModel
 
             Collection.Movies.Add(NewMovie);
             NewMovie = new Movie();
+        }
+        private void RemoveDirector()
+        {
+            Collection.Directors.Remove(SelectedDirectorr);
+        }
+        private void RemoveMovie()
+        {
+            Collection.Movies.Remove(SelectedMoviee);
         }
         private void LoadXml()
         {
