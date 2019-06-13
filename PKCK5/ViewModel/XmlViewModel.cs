@@ -48,6 +48,7 @@ namespace ViewModel
         public ICommand Click_Save_To_Txt { get; }
         public ICommand Click_Save_To_Xhtml { get; }
         public ICommand Click_Save_To_Pdf { get; }
+        public ICommand Click_Save_To_Svg { get; }
         public event PropertyChangedEventHandler PropertyChanged;
 
         public XmlViewModel()
@@ -59,6 +60,7 @@ namespace ViewModel
             Click_Save_To_Txt = new RelayCommand(TransformToTxt);
             Click_Save_To_Xhtml = new RelayCommand(TransformToXhtml);
             Click_Save_To_Pdf = new RelayCommand(TransformToPdf);
+            Click_Save_To_Svg = new RelayCommand(TransformToSvg);
 
             SelectedCurrency = "PLN";
             SelectedTimeUnit = "min";
@@ -118,9 +120,9 @@ namespace ViewModel
         }
         private void LoadXml()
         {
-            ValidateXmlXsd();
-
-            string filename = "D:\\Repository\\PKCK\\Docs\\moviesHandWritten.xml";
+            //string filename = "C:\\Users\\Windows\\Documents\\PKCK\\Docs\\moviesHandWritten.xml";
+            String filename = XmlViewModelHelper.OpenDialog("Załaduj plik .xml", "xml");
+            ValidateXmlXsd(filename);
             XmlSerializer serializer = new XmlSerializer(typeof(Collection));
 
             using (Stream reader = new FileStream(filename, FileMode.Open))
@@ -133,7 +135,8 @@ namespace ViewModel
         }
         private void SaveToXml()
         {
-            string filename = "D:\\Repository\\PKCK\\Docs\\newXml.xml";
+            //string filename = "D:\\Repository\\PKCK\\Docs\\newXml.xml";
+            String filename = XmlViewModelHelper.OpenDialog("Zapisz do pliku .xml", "xml");
             XmlSerializer serializer = new XmlSerializer(typeof(Collection));
 
             using (Stream reader = new FileStream(filename, FileMode.Create))
@@ -143,9 +146,12 @@ namespace ViewModel
         }
         private void TransformToXml()
         {
-            FileInfo xslt = new FileInfo("D:\\Repository\\PKCK\\Docs\\documentTemplate.xsl");
-            FileInfo input = new FileInfo("D:\\Repository\\PKCK\\Docs\\moviesHandWritten.xml");
-            FileInfo output = new FileInfo("D:\\Repository\\PKCK\\Docs\\testy\\xmlTest.xml");
+            //FileInfo xslt = new FileInfo("D:\\Repository\\PKCK\\Docs\\documentTemplate.xsl");
+            //FileInfo input = new FileInfo("D:\\Repository\\PKCK\\Docs\\moviesHandWritten.xml");
+            //FileInfo output = new FileInfo("D:\\Repository\\PKCK\\Docs\\testy\\xmlTest.xml");
+            FileInfo xslt = new FileInfo(XmlViewModelHelper.OpenDialog("Załaduj plik XSLT do podsumowywującej transformacji .xml", "xsl"));
+            FileInfo input = new FileInfo(XmlViewModelHelper.OpenDialog("Załaduj wejściowy plik .xml", "xml"));
+            FileInfo output = new FileInfo(XmlViewModelHelper.OpenDialog("Załaduj wyjściowy plik .xml", ""));
 
             // Compile stylesheet
             Processor processor = new Processor();
@@ -168,50 +174,66 @@ namespace ViewModel
         {
             TransformToXml();
 
-            XPathDocument myXPathDoc = new XPathDocument("D:\\Repository\\PKCK\\Docs\\testy\\xmlTest.xml");
+            //XPathDocument myXPathDoc = new XPathDocument("D:\\Repository\\PKCK\\Docs\\testy\\xmlTest.xml");
+            XPathDocument myXPathDoc = new XPathDocument(XmlViewModelHelper.OpenDialog("Załaduj wejściowy plik XML", "xml"));
             XslCompiledTransform myXslTrans = new XslCompiledTransform();
-            myXslTrans.Load("D:\\Repository\\PKCK\\Docs\\txtTemplate.xsl");
-            XmlTextWriter myWriter = new XmlTextWriter("D:\\Repository\\PKCK\\Docs\\testy\\txtTest.txt", null);
+            //myXslTrans.Load("D:\\Repository\\PKCK\\Docs\\txtTemplate.xsl");
+            myXslTrans.Load(XmlViewModelHelper.OpenDialog("Załaduj plik XSLT do transformacji .txt", "xsl"));
+            //XmlTextWriter myWriter = new XmlTextWriter("D:\\Repository\\PKCK\\Docs\\testy\\txtTest.txt", null);
+            XmlTextWriter myWriter = new XmlTextWriter(XmlViewModelHelper.OpenDialog("Załaduj wyjściowy plik TXT", "txt"), null);
             myXslTrans.Transform(myXPathDoc, null, myWriter);
         }
         private void TransformToXhtml()
         {
             TransformToXml();
-            XPathDocument myXPathDoc = new XPathDocument("D:\\Repository\\PKCK\\Docs\\testy\\xmlTest.xml");
+            //XPathDocument myXPathDoc = new XPathDocument("D:\\Repository\\PKCK\\Docs\\testy\\xmlTest.xml");
+            XPathDocument myXPathDoc = new XPathDocument(XmlViewModelHelper.OpenDialog("Załaduj wejściowy plik XML", "xml"));
             XslCompiledTransform myXslTrans = new XslCompiledTransform();
-            myXslTrans.Load("D:\\Repository\\PKCK\\Docs\\xhtmlTemplate.xsl");
-            XmlTextWriter myWriter = new XmlTextWriter("D:\\Repository\\PKCK\\Docs\\testy\\xhtmlTest.xhtml", null);
+            //myXslTrans.Load("D:\\Repository\\PKCK\\Docs\\xhtmlTemplate.xsl");
+            myXslTrans.Load(XmlViewModelHelper.OpenDialog("Załaduj plik XSLT do transformacji .XHTML", "xsl"));
+            //XmlTextWriter myWriter = new XmlTextWriter("D:\\Repository\\PKCK\\Docs\\testy\\xhtmlTest.xhtml", null);
+            XmlTextWriter myWriter = new XmlTextWriter(XmlViewModelHelper.OpenDialog("Załaduj wyjściowy plik XHTML", "xhtml"), null);
             myXslTrans.Transform(myXPathDoc, null, myWriter);
         }
         private void TransformToPdf()
         {
             TransformToXml();
-            XPathDocument myXPathDoc = new XPathDocument("D:\\Repository\\PKCK\\Docs\\testy\\xmlTest.xml");
+            //XPathDocument myXPathDoc = new XPathDocument("D:\\Repository\\PKCK\\Docs\\testy\\xmlTest.xml");
+            XPathDocument myXPathDoc = new XPathDocument(XmlViewModelHelper.OpenDialog("Załaduj wejściowy plik XML", "xml"));
             XslCompiledTransform myXslTrans = new XslCompiledTransform();
-            myXslTrans.Load("D:\\Repository\\PKCK\\Docs\\pdfTemplate.xsl");
-            XmlTextWriter myWriter = new XmlTextWriter("D:\\Repository\\PKCK\\Docs\\testy\\pdfTest.fo", null);
+            //myXslTrans.Load("D:\\Repository\\PKCK\\Docs\\pdfTemplate.xsl");
+            myXslTrans.Load(XmlViewModelHelper.OpenDialog("Załaduj plik XSLT do transformacji .PDF", "xsl"));
+            //XmlTextWriter myWriter = new XmlTextWriter("D:\\Repository\\PKCK\\Docs\\testy\\pdfTest.fo", null);
+            String foFile = XmlViewModelHelper.OpenDialog("Załaduj pośredniczący plik FO (.fo)", "fo");
+            XmlTextWriter myWriter = new XmlTextWriter(foFile, null);
             myXslTrans.Transform(myXPathDoc, null, myWriter);
             myWriter.Close();
             FonetDriver driver = FonetDriver.Make();
-            driver.Render("D:\\Repository\\PKCK\\Docs\\testy\\pdfTest.fo", "D:\\Repository\\PKCK\\Docs\\testy\\pdfTest.pdf");
+            //driver.Render("D:\\Repository\\PKCK\\Docs\\testy\\pdfTest.fo", "D:\\Repository\\PKCK\\Docs\\testy\\pdfTest.pdf");
+            driver.Render(foFile, XmlViewModelHelper.OpenDialog("Załaduj wyjściowy plik PDF", "pdf"));
         }
         private void TransformToSvg()
         {
             TransformToXml();
-            XPathDocument myXPathDoc = new XPathDocument("D:\\Repository\\PKCK\\Docs\\testy\\xmlTest.xml");
+            //XPathDocument myXPathDoc = new XPathDocument("D:\\Repository\\PKCK\\Docs\\testy\\xmlTest.xml");
+            XPathDocument myXPathDoc = new XPathDocument(XmlViewModelHelper.OpenDialog("Załaduj wejściowy plik XML", "xml"));
             XslCompiledTransform myXslTrans = new XslCompiledTransform();
-            myXslTrans.Load("D:\\Repository\\PKCK\\Docs\\svgTemplate.xsl");
-            XmlTextWriter myWriter = new XmlTextWriter("D:\\Repository\\PKCK\\Docs\\testy\\svgTest.svg", null);
+            //myXslTrans.Load("D:\\Repository\\PKCK\\Docs\\svgTemplate.xsl");
+            myXslTrans.Load(XmlViewModelHelper.OpenDialog("Załaduj plik XSLT do transformacji .SVG", "xsl"));
+            //XmlTextWriter myWriter = new XmlTextWriter("D:\\Repository\\PKCK\\Docs\\testy\\svgTest.svg", null);
+            XmlTextWriter myWriter = new XmlTextWriter(XmlViewModelHelper.OpenDialog("Załaduj wyjściowy plik SVG", "svg"), null);
             myXslTrans.Transform(myXPathDoc, null, myWriter);
 
         }
         #endregion
 
-        public void ValidateXmlXsd()
+        public void ValidateXmlXsd(String xmlFileName)
         {
             XmlDocument xml = new XmlDocument();
-            xml.Load("D:\\Repository\\PKCK\\Docs\\moviesHandWritten.xml");
-            xml.Schemas.Add(null, "D:\\Repository\\PKCK\\Docs\\schema.xsd");
+            //xml.Load("..\\..\\..\\..\\Docs\\moviesHandWritten.xml");
+            xml.Load(xmlFileName);
+            //xml.Schemas.Add(null, "..\\..\\..\\..\\Docs\\schema.xsd");
+            xml.Schemas.Add(null, XmlViewModelHelper.OpenDialog("Załaduj scheme", "xsd"));
 
             try
             {

@@ -91,6 +91,7 @@
     <Compile Include="XMLReader.cs" />
     <Compile Include="XmlViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XmlViewModelHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">

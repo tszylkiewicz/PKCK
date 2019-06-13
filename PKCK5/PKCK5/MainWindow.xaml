@@ -28,6 +28,8 @@
                     <Button Content="Save to TXT" Command="{Binding Click_Save_To_Txt}" HorizontalAlignment="Center" Width="100" Height="20" Margin="804,12,-736,12" RenderTransformOrigin="-1.91,0.5"/>
                     <Button Content="Save to XHTML" Command="{Binding Click_Save_To_Xhtml}" HorizontalAlignment="Center" Width="100" Height="20" Margin="908,12,-841,12" RenderTransformOrigin="-1.91,0.5"/>
                     <Button Content="Save to PDF" Command="{Binding Click_Save_To_Pdf}" HorizontalAlignment="Center" Width="100" Height="20" Margin="1012,12,-946,12" RenderTransformOrigin="-1.91,0.5"/>
+                    <Button Content="Save to SVG" Command="{Binding Click_Save_To_Svg}" HorizontalAlignment="Center" Width="100" Height="20" Margin="1118,12,-1049,12" RenderTransformOrigin="-1.91,0.5"/>
+
                 </Grid>
             </StackPanel>
         </GroupBox>
